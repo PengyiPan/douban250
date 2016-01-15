@@ -7,7 +7,6 @@ Created on Jan 14, 2016
 '''
 import urllib2
 from bs4 import BeautifulSoup
-import codecs
 import io
 
 # result html file
@@ -206,7 +205,7 @@ if __name__ == '__main__':
     
     with io.open('../website/index.html','w+',encoding='utf8') as f:
         
-        crawlAndGenerateRow(24)
+        crawlAndGenerateRow(250)
         finalHtml = mergeTwohtml(f)
     
         
