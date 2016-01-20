@@ -73,6 +73,7 @@ otherHtml = """
     <script src='js/jquery.min.js'></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>"""
 
@@ -116,7 +117,7 @@ def readFiles():
             html += "<img src='" + line + "' class='movie-cover-img img-responsive' alt='movie cover'/>\n\t"
             
         if lineCounter % 7 ==2: #title
-            html += "<span class='movie-title-main'><h2><strong>" + line + "</strong></h2></span>\n\t"
+            html += "<span class='movie-title-main'>" + line + "</span>\n\t"
             
 #         if lineCounter % 7 ==3: #director and genre
 #             html += "<span class='directors'><h4><small>" + line + "</small></h4></span>\n\t"
@@ -143,17 +144,18 @@ def readFiles():
             html += "<span class='rating-bar-block'>\n\t\t<div class='progress rating-bar'>\n\t\t\t<div class='progress-bar progress-bar-striped active " 
             html += barStyle + "' role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width:" + str(percentage) +"%' >\n\t\t\t\t"
             html += str(rating) + "\t\t\n"
-            html += "\t\t\t</div>\n\t\t</div>\n\t</span>\n"
+            html += "\t\t\t</div>\n\t\t</div>\n\t</span>\n\t"
 #             
 #         if lineCounter % 7 ==5: #num of comments
 #             html += "<span class='commentNum'>" + line + '</span>\n\t'
             
         if lineCounter % 7 ==6: # description
-            html += "<span class='description'>" + line + '</span>\n' 
+            html += "<span class='description'>" + line + '</span>\n\t' 
             
         lineCounter += 1
         
         if lineCounter % 7 == 0: #end of one item
+            html += "<span class='rank-num'><div class='badge'>" + str(lineCounter/7) + "</div></span>\n"
             html += '</div>\n' 
 
         if lineCounter % (7*6) == 0: #finished one row - 6 items

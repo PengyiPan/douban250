@@ -71,11 +71,15 @@
 
 .darken {
     background-color: black;
-    padding: 0;
-    
+    padding: 0; 
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;      
 }
 
-.darken img {    
+.darken img {   
+	cursor: default; 
     -webkit-transition: all 0.5s linear;
        -moz-transition: all 0.5s linear;
         -ms-transition: all 0.5s linear;
@@ -91,9 +95,8 @@
 	position:absolute;
 	color:#fff;
 	visibility: hidden;
-	cursor: default;
 	width: 100%;	
-
+	cursor: default;
 	padding-left: 10px;
 	padding-right: 10px;
 
@@ -114,7 +117,9 @@
 
 
 .darken .movie-title-main{
-	top: 10%;
+	top: 15%;
+	font-size: 30px;
+	font-weight: 500;
 }
 .darken .directors{
 	top:40%;
@@ -129,15 +134,21 @@
 	top:75%;
 }
 .darken .rating-bar-block{
-	top:70%;
+	top:80%;
 }
 
 .darken .rating-bar{
 	border-radius: 0;
 	width: 50%;
 	display: inline-block;
-
 	
+}
+.darken .rank-num{
+	top:2%;
+	text-align: left;
+}
+.darken .badge{
+	background-color: green;
 }
 
 
