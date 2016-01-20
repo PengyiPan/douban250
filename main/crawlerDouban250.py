@@ -9,106 +9,67 @@ import urllib2
 from bs4 import BeautifulSoup
 import io
 
-# result html file
+#number of movies to crawl
 
-html = """"""
+_startRank = 51      #inclusive (can pick 1,26,51,76...201,226)
 
-#other website code
-otherHtml = """
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>看完豆瓣250没</title>
-
-    <!-- Bootstrap -->
-    <link href='css/bootstrap.min.css' rel='stylesheet'>
-
-    <!-- CSS -->
-    <link href='css/index.css' rel='stylesheet'>
-    <!-- //CSS -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
-      <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- whole page container -->
-    <div class='container-fluid'>
-      
-      <!-- title bar row -->
-      <div class='col-md-12'>
-
-        <div class='col-md-4'>
-          blank
-        </div>
-
-        <div class='col-md-4'>
-          title and logo
-        </div>
-
-        <div class='col-md-4'>
-          sign in
-        </div>
-
-      </div>
-      <!-- //title bar row -->
-      <!-- movies section -->
-      <div class='col-md-12 movies-container'>
-        
-      </div>
-      <!-- movies section -->
-      
+_endRank = 75       #inclusive
 
 
-    </div>
-    <!-- //whole page container -->
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src='js/jquery.min.js'></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src='js/bootstrap.min.js'></script>
-  </body>
-</html>"""
-
-
-
-#end of header
-
-def crawlAndGenerateRow(topRank):
-    global html
+def crawlAndGenerateRow(startRank,endRank,resultFile):
     
-    rankNum = 0
+    print "crawling " + str(startRank) + "-" + str(endRank)
+     
+    output = ""
+    
+    rankNum = startRank - 1
      
     while 1:
-           
+                   
         url = "http://movie.douban.com/top250?start=" + str(rankNum) + "&filter="
+
         htm = urllib2.urlopen(url)
-        soup = BeautifulSoup(htm,"html.parser")   
+        soup = BeautifulSoup(htm,"html.parser")  
         itemSet = soup.findAll('div',attrs = {"class":"item"})
         
         #each loop produce a movie
         for item in itemSet:
 #             print item
-            if rankNum % 6 == 0:
-                html += "<!-- movies row -->\n<div class='col-md-12'>\n"
 
             rankNum += 1
-            html += "<div class='col-md-2 darken' id='" + str(rankNum) + "'>\n\t"
+            output += str(rankNum) + "\n"
             
             #Fetch img urls
-            imgResult = "<img src='"
-            imgName = item.find('img')
-            imgResult += imgName['src']
-            imgResult += "' class='movie-cover-img img-responsive' alt='movie cover'>"
-            html += imgResult + '\n\t' 
+            
+            #get img result from youku
+            
+            ultNameToUse = item.find('span',attrs = {"class":"title"}).string
+            
+            youkuUrl = "http://www.soku.com/v?keyword=" + ultNameToUse.encode(encoding='UTF-8',errors='strict')
+            youkuUrl = youkuUrl.replace(' ','%')
+
+            youkuHtm = urllib2.urlopen(youkuUrl)          
+            imgSoup = BeautifulSoup(youkuHtm,"html.parser")
+            
+            imgClass = imgSoup.find('div',attrs = {"class":"s_target"})
+            
+            if imgClass is not None: #movie exists
+                
+                                
+                tempStr = imgClass.find('img')['src']
+                if tempStr == "http://g1.ykimg.com/0900641F464A7BBE7400000000000000000000-0000-0000-0000-00005B2F7B0E": #“无预览图”
+                    imgName = item.find('img')
+                    output += imgName['src']
+                else:
+                    output += tempStr
+                        
+            #//get img result from youku
+            else:
+
+                imgName = item.find('img')
+                output += imgName['src']
+                            
+            output += '\n' 
              
             #Fetch Titles
             nameSet = item.findAll('span',attrs = {"class":"title"})
@@ -116,20 +77,16 @@ def crawlAndGenerateRow(topRank):
             allNames = ""
             for name in nameSet:
                 nameStr = name.string
-                nameStr = "<h2><strong>" + nameStr + "</strong></h2>"
                 allNames += nameStr
                 break
-            allNames += "<h3><small>";
-            for otherName in otherNameSet:
-                otherNameStr = otherName.string              
-                allNames += otherNameStr
+
+#             for otherName in otherNameSet:
+#                 otherNameStr = otherName.string              
+#                 allNames += otherNameStr
 
             allNames = allNames.replace('  ', ' ')
-            allNames += "</small></h3>";
             
-            allNames = "<span class='movie-title-main'>" + allNames + "</span>"
-
-            html += allNames + '\n\t'
+            output += allNames + '\n'
             
             #Fetch director and genre
             directorSpans = item.find('div',attrs = {"class":"bd"}).find('p')
@@ -138,80 +95,96 @@ def crawlAndGenerateRow(topRank):
                 dirStr += dirSpan.string
             resultStr="" 
             dirStr.splitlines() 
-            resultStr += "<span class='directors'><h4><small>"
+
             for line in dirStr:
                 resultStr += line  
             resultStr = resultStr.replace('\n','')
             resultStr = resultStr.replace('                            ','')
             resultStr = resultStr.replace('...',' ')
-            resultStr += "</small></h4></span>"
             resultStr = resultStr.replace('                        ','')
             
-            html += resultStr + '\n\t'  
+            output += resultStr + '\n'  
             
             #Fetch rating (out of 10)
             rating = item.find('span',attrs = {"class":"rating_num"})
-            html += "<span class='rating'>"+rating.string + '</span>\n\t'
+            output += rating.string + '\n'
             
             #Fetch comment number short description
-            comResult="<span class='commentNum'>"
+            comResult=""
             commentSpan = item.findAll('span')
             for span in commentSpan[-2]:
                 spanStr = span.string
                 if spanStr is None:
                     continue
-                comResult += spanStr + '</span>\n\t'
-            html += comResult
+                comResult += spanStr + '\n'
+            output += comResult
 
             #Fetch short description
-            desResult = "<span class='description'>"
+            desResult = ""
             for span in commentSpan[-1]:
                 spanStr = span.string
                 if spanStr is None:
                     continue
-                desResult += spanStr + '</span>\n'            
-            html += desResult
+                desResult += spanStr + '\n'            
+            output += desResult
             
-            html += '</div>\n' 
+            
             print "Finished #" + str(rankNum)  
-                
-            if rankNum % 6 == 0:
-                
-                html += "</div>\n<!-- //movies row -->\n"    
             
-            if rankNum == topRank:
-                if topRank%6 == 0:
-                    return
-                else:
-                    html += "</div>\n<!-- //movies row -->\n" 
-                    return
+            if rankNum == endRank:
+                break    
+              
+        if rankNum == endRank:
+            break
     
+    resultFile.write(output)
         
-def mergeTwohtml(fileHandle):
-    searchLine = "<div class='col-md-12 movies-container'>"
-    
-    i = otherHtml.index(searchLine) + len(searchLine) # Make sure searchline is actually in the file
-    
-#     result = otherHtml[:i] + html + otherHtml[i:]
-     
-    fileHandle.write(otherHtml[:i].decode('utf-8')); 
-    fileHandle.write(html);
-    fileHandle.write(otherHtml[i:].decode('utf-8'));
+
      
 
+
+def crawl(startRank,endRank):
+    
+#     #clear result directory
+#     cdir = os.getcwd()
+#     tdir = "../crawlerResult/"
+#     os.chdir(tdir)
+#     filelist = [ f for f in os.listdir(".") if f.endswith(".txt") ]   
+#     for f in filelist:
+#         os.remove(f)
+#     
+#     os.chdir(cdir)
+#     #//clear result directory
+    
+    
+    
+    numOfResultFile = (endRank-startRank)/25 + 1
+     
+    for fileNum in range(numOfResultFile):
+         
+        fileName = "result_" + str(startRank/25 + fileNum) + ".txt"
+     
+        with io.open('../crawlerResult/' + fileName,'w+',encoding='utf8') as f:
+             
+            tempStart = startRank + fileNum * 25
+            tempEnd = tempStart + 25 - 1
+             
+            if _endRank - tempStart < 25:
+                tempEnd = _endRank              
+                        
+            crawlAndGenerateRow(tempStart,tempEnd,f)
+      
+          
+              
+        f.close()    
+    
+                            
     
 
 if __name__ == '__main__':
     
-    with io.open('../website/index.html','w+',encoding='utf8') as f:
-        
-        crawlAndGenerateRow(250)
-        finalHtml = mergeTwohtml(f)
-    
-        
-    f.close()
-             
-    
+    crawl(_startRank,_endRank)
+                 
     print "===================="
     print "     All done"
     print "===================="
