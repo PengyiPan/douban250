@@ -79,7 +79,7 @@
 }
 
 
-.darken img {   
+.darken .movie-cover-img {   
 	cursor: default; 
     -webkit-transition: all 0.2s linear;
        -moz-transition: all 0.2s linear;
@@ -88,7 +88,7 @@
             transition: all 0.2s linear;
 }
 
-.darken:hover img {
+.darken:hover .movie-cover-img {
 	opacity: 0.5; 
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
@@ -96,7 +96,7 @@
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-.darken:hover img:before {
+.darken:hover .movie-cover-img:before {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -173,6 +173,171 @@
 .darken .badge{
 	background-color: green;
 }
+
+.darken .add-img-container{
+	top:30%;
+	
+}
+.darken .add-img-container .add-img{
+	width: 100px;
+	height: 100px;
+	visibility: hidden;
+
+	opacity: 0;	
+}
+.darken.adding .add-img-container .add-img{
+	visibility: visible;
+
+    -webkit-animation: fadeInFromNone 1s ease-in-out;
+       -moz-animation: fadeInFromNone 1s ease-in-out;
+         -o-animation: fadeInFromNone 1s ease-in-out;
+            animation: fadeInFromNone 1s ease-in-out;
+	
+}
+.darken .delete-img-container{
+	top:30%;
+	
+}
+.darken .delete-img-container .delete-img{
+	width: 100px;
+	height: 100px;
+	visibility: hidden;
+
+	opacity: 0;	
+}
+.darken.deleting .delete-img-container .delete-img{
+	visibility: visible;
+
+    -webkit-animation: fadeInFromNone 1s ease-in-out;
+       -moz-animation: fadeInFromNone 1s ease-in-out;
+         -o-animation: fadeInFromNone 1s ease-in-out;
+            animation: fadeInFromNone 1s ease-in-out;
+	
+}
+.darken.deleting-add .add-img-container{
+	top:74%;
+	left: 33%;
+
+    -webkit-animation: minirizedOut 1s linear;
+       -moz-animation: minirizedOut 1s linear;
+         -o-animation: minirizedOut 1s linear;
+            animation: minirizedOut 1s linear;
+
+}
+.darken.deleting-add .add-img-container .add-img{
+
+
+	visibility: visible;
+
+	opacity: 0.7;	
+}
+
+.darken.seen .add-img-container{
+
+	top:74%;
+	left: 33%;
+	-webkit-animation: moveToCorner 0.3s linear;
+	   -moz-animation: moveToCorner 0.3s linear;
+	     -o-animation: moveToCorner 0.3s linear;
+	        animation: moveToCorner 0.3s linear;
+	
+}
+.darken.seen .add-img-container .add-img{
+
+
+
+	visibility: visible;
+
+	opacity: 0.7;	
+}
+
+/*add icon minirized*/
+
+@-webkit-keyframes minirizedOut {
+      0% {transform:scale(0);}
+     50% {transform:scale(1.5);}
+	100% {transform:scale(0.1);}
+}
+
+@-moz-keyframes minirizedOut {
+      0% {transform:scale(0);}
+     50% {transform:scale(1.5);}
+	100% {transform:scale(0.1);}
+}
+
+@-o-keyframes minirizedOut {
+      0% {transform:scale(0);}
+     50% {transform:scale(1.5);}
+	100% {transform:scale(0.1);}
+}
+
+@keyframes minirizedOut {
+      0% {transform:scale(0);}
+     50% {transform:scale(1.5);}
+	100% {transform:scale(0.1);}
+}
+
+/*//add icon minirized*/
+
+
+/*add move to corner animation*/
+
+@-webkit-keyframes moveToCorner {
+      0% {top:30%;left:0%;}
+     50% {top:52%;left:16.5%;}
+	100% {top:74%;left:33%;}
+}
+
+@-moz-keyframes moveToCorner {
+      0% {top:30%;left:0%;}
+     50% {top:52%;left:16.5%;}
+	100% {top:74%;left:33%;}
+}
+
+@-o-keyframes moveToCorner {
+      0% {top:30%;left:0%;}
+     50% {top:52%;left:16.5%;}
+	100% {top:74%;left:33%;}
+}
+
+@keyframes moveToCorner {
+      0% {top:30%;left:0%;}
+     50% {top:52%;left:16.5%;}
+	100% {top:74%;left:33%;}
+}
+
+/*//add move to corner animation*/
+
+
+
+/*add/delete icon fadeIn animation*/
+
+@-webkit-keyframes fadeInFromNone {
+    0% {opacity: 1;transform: scale(4.0);}
+    50% {opacity: 0.7;}
+	100% {opacity: 0.5;}
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {opacity: 1;transform: scale(4.0);}
+    50% {opacity: 0.7;}
+	100% {opacity: 0.5;}
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {opacity: 1;transform: scale(4.0);}
+    50% {opacity: 0.7;}
+	100% {opacity: 0.5;}
+}
+
+@keyframes fadeInFromNone {
+    0% {opacity: 1;transform: scale(4.0);}
+    50% {opacity: 0.7;}
+	100% {opacity: 0.5;}
+}
+/*//add/delete icon fadeIn animation*/
+
+
 
 
 

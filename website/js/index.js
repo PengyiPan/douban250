@@ -14,7 +14,18 @@ $(document).ready(function(){
             timer = setTimeout(function() {
 
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            alert('ADDING single clicked id=' + elementList[elementList.length - 7].id); //perform single-click action    
+            var clicked_id = elementList[elementList.length - 7].id
+            var movie_to_add = document.getElementById(clicked_id); //perform single-click action
+            $("#" + clicked_id).toggleClass("adding");
+
+  
+            setTimeout(function() {
+              $("#" + clicked_id).toggleClass("adding");
+              seenId.push(clicked_id);
+              refreshSeenMarker();
+            },1000);
+            
+
             clicks = 0;             //after action performed, reset counter
 
             }, DELAY);
@@ -23,7 +34,27 @@ $(document).ready(function(){
 
             clearTimeout(timer);    //prevent single-click action
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            alert('REMOVING double clicked id=' + elementList[elementList.length - 7].id);   //perform double-click action
+            var clicked_id = elementList[elementList.length - 7].id
+            //perform double-click action
+            
+            if($("#" + clicked_id).hasClass('seen')){ //check if add icon is there
+              $("#" + clicked_id).removeClass('seen');
+              $("#" + clicked_id).toggleClass("deleting-add"); // add icon blink animation css class
+            }
+            
+            $("#" + clicked_id).toggleClass("deleting");
+
+            setTimeout(function() {
+
+                if($("#" + clicked_id).hasClass('deleting-add')){
+                  $("#" + clicked_id).removeClass('deleting-add'); // remove add icon blink animation css class
+                }
+
+                $("#" + clicked_id).toggleClass("deleting");
+                seenId = arrayToUnique(removeAFromArray(seenId,clicked_id));
+                refreshSeenMarker();
+            },1000);    
+
             clicks = 0;             //after action performed, reset counter
         }
 
@@ -34,38 +65,36 @@ $(document).ready(function(){
 
 });
 
-// var enterCheck = false;
 
-// $(".darken").hover(
+var seenId = [];
+function refreshSeenMarker(){
+  seenId = arrayToUnique(seenId);
+  $('.darken').removeClass('seen');
+  for (var i in seenId) {
+    id = seenId[i];
+    $("#" + id).toggleClass('seen');
+  };
 
-//   function() { //hover in
-    
-//     if (enterCheck == false){
-//       $(".movie-title-main").ready(function() { 
-                
-//         var el     = $(this),  
-//         newone = el.clone(true);
-           
-//         el.before(newone);
-        
-//         $("." + el.attr("class") + ":last").remove();
+}
 
-//       });
+function arrayToUnique(list) {
+    var result = [];
+    $.each(list, function(i, e) {
+        if ($.inArray(e, result) == -1) result.push(e);
+    });
+    return result;
+}
 
-//       // var elm = $(".movie-title-main");
-//       // var newone = elm.cloneNode(true);
-//       // elm.parentNode.replaceChild(newone, elm);
+function removeAFromArray(arr) {
+    var what, a = arguments, L = a.length, ax;
+    while (L > 1 && arr.length) {
+        what = a[--L];
+        while ((ax= arr.indexOf(what)) !== -1) {
+            arr.splice(ax, 1);
+        }
+    }
+    return arr;
+}
 
-//       enterCheck = true;
-
-//     }
-
-//   },
-  
-//   function() { //hover out
-//     enterCheck = false;
-
-
-// });
 
 
