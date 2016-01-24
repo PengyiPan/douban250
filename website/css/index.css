@@ -78,18 +78,34 @@
 	user-select: none;      
 }
 
+
 .darken img {   
 	cursor: default; 
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-        -ms-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
 }
 
 .darken:hover img {
-    opacity: 0.5;           
+	opacity: 0.5; 
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
+.darken:hover img:before {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
 .darken span{
 	left: 0;
 	position:absolute;
@@ -104,36 +120,43 @@
 	border-width: 3px;
 	border-color: blue;*/
 
+
 }
 .darken:hover span{
 
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-        -ms-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
+	left:0px; /*move back to normal position*/
+
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
             visibility: visible;
 }
 
 
 .darken .movie-title-main{
+	left: -200px;
+
 	top: 15%;
 	font-size: 30px;
 	font-weight: 500;
 }
-.darken .directors{
-	top:40%;
-}
 .darken .description{
+	left: 200px;
+
 	top:50%;
 }
-.darken .rating{
-	top:65%;
-}
-.darken .commentNum{
-	top:75%;
+.darken .rank-num{
+
+	top:2%;
 }
 .darken .rating-bar-block{
+
+	top:120%;
+}
+.darken:hover .rating-bar-block{
+
 	top:80%;
 }
 

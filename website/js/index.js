@@ -34,4 +34,38 @@ $(document).ready(function(){
 
 });
 
+// var enterCheck = false;
+
+// $(".darken").hover(
+
+//   function() { //hover in
+    
+//     if (enterCheck == false){
+//       $(".movie-title-main").ready(function() { 
+                
+//         var el     = $(this),  
+//         newone = el.clone(true);
+           
+//         el.before(newone);
+        
+//         $("." + el.attr("class") + ":last").remove();
+
+//       });
+
+//       // var elm = $(".movie-title-main");
+//       // var newone = elm.cloneNode(true);
+//       // elm.parentNode.replaceChild(newone, elm);
+
+//       enterCheck = true;
+
+//     }
+
+//   },
+  
+//   function() { //hover out
+//     enterCheck = false;
+
+
+// });
+
 

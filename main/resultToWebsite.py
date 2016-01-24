@@ -27,6 +27,7 @@ otherHtml = """
 
     <!-- CSS -->
     <link href='css/index.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- //CSS -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
