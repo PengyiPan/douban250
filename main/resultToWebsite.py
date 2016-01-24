@@ -21,6 +21,7 @@ otherHtml = """
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>看完豆瓣250没</title>
+    <link rel="shortcut icon" href="image/siteIcon.ico">
 
     <!-- Bootstrap -->
     <link href='css/bootstrap.min.css' rel='stylesheet'>
@@ -29,6 +30,11 @@ otherHtml = """
     <link href='css/index.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- //CSS -->
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -109,10 +115,10 @@ def readFiles():
     for line in fileBuffer.splitlines():
         
         if lineCounter % (7*6) == 0: #start of one row - 6 items
-            html += "<!-- movies row -->\n<div class='col-md-12 movie-row'>\n<div class='row-container'>\n"
+            html += "<!-- movies row -->\n<div class='col-md-12 movie-row '>\n<div class='row-container'>\n"
         
         if lineCounter % 7 == 0: #start of one item
-            html += "<div class='col-md-2 darken' id='" + line + "'>\n\t"
+            html += "<div class='col-md-2 darken animated zoomIn wow' id='" + line + "'>\n\t"
         
         if lineCounter % 7 ==1: #img url
             html += "<img src='" + line + "' class='movie-cover-img img-responsive' alt='movie cover'/>\n\t"
