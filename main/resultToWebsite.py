@@ -65,10 +65,11 @@ otherHtml = """
       </div>
       <!-- //title bar row -->
       <!-- movies section -->
-      <div class='col-md-12 movies-container'>
+      <div class='col-md-12 movies-container' id='movies-container'>\n
         
       </div>
       <!-- movies section -->
+      <div id='loading'></div>
       
 
 
@@ -178,7 +179,7 @@ def readFiles():
                 
 
 def mergeTwohtml(fileHandle):
-    searchLine = "<div class='col-md-12 movies-container'>"
+    searchLine = "<div class='col-md-12 movies-container' id='movies-container'>\n"
     
     i = otherHtml.index(searchLine) + len(searchLine) # Make sure searchline is actually in the file
     

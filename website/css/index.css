@@ -1,4 +1,37 @@
 /*developing*/
+#movies-container {
+    visibility: hidden;
+}
+#loading {
+	visibility: visible;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 1000vh;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url("../image/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+
+#whole-page-container{
+	padding-top: 70px; /*for nav bar*/
+}
+#navbar-logo{
+	width: auto;
+	height: 100%;
+}
+
+.navbar, .dropdown-menu, .login-btn {
+	background: rgba(255,255,255,0.8);
+}
+
+
 .container-fluid{
 	/*background-color: yellow;*/
 }
