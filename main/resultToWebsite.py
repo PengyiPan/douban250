@@ -13,6 +13,7 @@ html = """"""
 
 #other website code
 otherHtml = """
+
 <!DOCTYPE html>
 <html lang='en'>
   <head>
@@ -33,7 +34,9 @@ otherHtml = """
     
     <script src="js/wow.min.js"></script>
     <script>
-      new WOW().init();
+        setTimeout(function() {
+          new WOW().init();
+        },2000);      
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -45,31 +48,79 @@ otherHtml = """
   </head>
   <body>
     <!-- whole page container -->
-    <div class='container-fluid'>
+    <div class='container-fluid' id='whole-page-container'>
+
       
       <!-- title bar row -->
       <div class='col-md-12'>
 
-        <div class='col-md-4'>
-          blank
-        </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img id= 'navbar-logo' alt='Logo' src="image/siteIcon.ico"/></a>
+              <a class="navbar-brand" href="#">看完豆瓣250没</a>
+            </div>            
 
-        <div class='col-md-4'>
-          title and logo
-        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <form class="navbar-form navbar-left" role="search">
+                    <button type="button" class="btn btn-default login-btn" data-toggle="modal" data-target="#myModal">登录</button>
+                  </form>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-user" aria-hidden="true"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">帐号设置</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">登出</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
 
-        <div class='col-md-4'>
-          sign in
-        </div>
+          </div>
+        </nav>
 
       </div>
       <!-- //title bar row -->
       <!-- movies section -->
-      <div class='col-md-12 movies-container' id='movies-container'>\n
+      <div class='col-md-12 movies-container' id='movies-container'>
         
       </div>
       <!-- movies section -->
       <div id='loading'></div>
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">登录</h4>
+              </div>
+              <div class="modal-body">
+                <p>用cookie登录</p>
+                <p>用cookie登录</p>
+                <p>用cookie登录</p>
+                <p>用cookie登录</p>
+                <p>用cookie登录</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+
+          </div>
+        </div>      
       
 
 
