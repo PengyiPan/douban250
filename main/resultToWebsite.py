@@ -180,7 +180,7 @@ def readFiles():
         
         if lineCounter % 7 ==1: #img url
             curRank = lineCounter/7 + 1
-            html += "<div class='img-container' id='movie-img-" + str(curRank) + "'></div>\n\t" 
+            html += "<div class='img-container' id='movie-img-" + str(curRank) + "'><div class='overlay'></div></div>\n\t" 
             css += "#movie-img-" + str(curRank) + "{\n\tbackground-image: url('" + line + "');\n}\n"
             
         if lineCounter % 7 ==2: #title

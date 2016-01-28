@@ -13,7 +13,7 @@ $(document).ready(function(){
 // On start fancy loading image
 
 function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 2000);
+    var intervalID = window.setInterval(checkReady, 1000);
 
     function checkReady() {
         if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -53,7 +53,7 @@ function detectClicking(){
             timer = setTimeout(function() {
 
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 5].id
+            var clicked_id = elementList[elementList.length - 6].id
             var movie_to_add = document.getElementById(clicked_id); //perform single-click action
             $("#" + clicked_id).toggleClass("adding");
 
@@ -73,7 +73,7 @@ function detectClicking(){
 
             clearTimeout(timer);    //prevent single-click action
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 5].id
+            var clicked_id = elementList[elementList.length - 6].id
             //perform double-click action
             
             if($("#" + clicked_id).hasClass('seen')){ //check if add icon is there

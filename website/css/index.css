@@ -12,9 +12,9 @@
     width: 100vw;
     height: 1000vh;
     background-color: rgba(255, 255, 255, 1);
-    background-image: url("../image/loading.gif");
-    background-repeat: no-repeat;
-    background-position: center top;
+    background: url("../image/loading.gif") no-repeat center center fixed;
+/*    background-repeat: no-repeat;
+    background-position: 50vw 50vh;*/
 }
 
 
@@ -31,53 +31,21 @@
 	background: rgba(255,255,255,0.8);
 }
 
-
-.movies-container{
-
-	border-style: solid;
-	border-width: 3px;
-	border-color: yellow;
-
-	text-align: center;
-	
-
-}
-.movies-center-container{
-	text-align: center;
-	padding: 0;
-
-
-	border-style: solid;
-	border-width: 3px;
-	border-color: pink;
-	background-color: green;
-}
-
 .img-container{
 
 	width: 100%;
 	height: 100%;
 
-	/*visibility: visible;*/
 	background-size: cover;
 
-	border-style: solid;
-	border-width: 3px;
-	border-color: grey;
+	cursor: default; 
+    -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
 
 }
-
-/*.movie-img{
-
-	padding: 0;
-	width: 100%;
-	height: 100%;
-    background-size: contain;
-    background-color: blue;
-
-
-
-}*/
 
 
 /*.movie-cover-img{
@@ -98,25 +66,13 @@
 
 .darken {
 
-/*	display: block;
-    max-width:200px;
-    max-height:300px;
-    width: auto;
-    height: auto;*/
-
-
-    border-style: solid;
+/*    border-style: solid;
 	border-width: 3px;
 	border-color: red;
-
-
-
-    background-color: black;
+	background-color: white;*/
+    
     padding: 0; 
     overflow: hidden;
-
-	
-
 
 	-webkit-user-select: none;
 	-moz-user-select: -moz-none;
@@ -125,15 +81,23 @@
 
 }
 
-.darken:hover .movie-cover-img {
-	opacity: 0.5; 
+.darken:hover .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+
+}
+
+.darken:hover .img-container {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-.darken:hover .movie-cover-img:before {
+.darken:hover .img-container:before {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -175,14 +139,15 @@
 
 
 .darken .movie-title-main{
-	left: -200px;
+	left: -100%;
 
 	top: 15%;
-	font-size: 30px;
+	font-size: 4vmin;
 	font-weight: 500;
 }
 .darken .description{
-	left: 200px;
+	left: 100%;
+	font-size: 1.5vmin;
 
 	top:50%;
 }
@@ -218,9 +183,9 @@
 	
 }
 .darken .add-img-container .add-img{
-	width: 100px;
-	height: 100px;
-	visibility: hidden;
+	width: 50%;
+	height: 50%;
+	visibility: visible;
 
 	opacity: 0;	
 }
@@ -238,8 +203,8 @@
 	
 }
 .darken .delete-img-container .delete-img{
-	width: 100px;
-	height: 100px;
+	width: 50%;
+	height: 50%;
 	visibility: hidden;
 
 	opacity: 0;	
@@ -254,8 +219,8 @@
 	
 }
 .darken.deleting-add .add-img-container{
-	top:74%;
-	left: 33%;
+	top:76%;
+	left: 35%;
 
     -webkit-animation: minirizedOut 1s linear;
        -moz-animation: minirizedOut 1s linear;
@@ -273,8 +238,8 @@
 
 .darken.seen .add-img-container{
 
-	top:74%;
-	left: 33%;
+	top:76%;
+	left: 35%;
 	-webkit-animation: moveToCorner 0.3s linear;
 	   -moz-animation: moveToCorner 0.3s linear;
 	     -o-animation: moveToCorner 0.3s linear;
