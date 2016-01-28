@@ -16,6 +16,7 @@
     <!-- CSS -->
     <link href='css/index.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/animate.min.css">
+    <link href='css/movies-img.css' rel='stylesheet'>
     <!-- //CSS -->
     
     <script src="js/wow.min.js"></script>
@@ -38,7 +39,7 @@
 
       
       <!-- title bar row -->
-      <div class='col-md-12'>
+      <div class='container-fluid'>
 
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
@@ -77,12 +78,11 @@
       </div>
       <!-- //title bar row -->
       <!-- movies section -->
-      <div class='col-md-12 movies-container' id='movies-container'>
+      <div class='container-fluid movies-container' id='movies-container'>
+      <div class='container movies-center-container'>
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='1'>
-	<img src='http://g2.ykimg.com/051600005355D7B167379F50CA08A983' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='1'>
+	<div class='img-container' id='movie-img-1'></div>
 	<span class='movie-title-main'>肖申克的救赎</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -96,8 +96,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='2'>
-	<img src='http://g1.ykimg.com/051600005317DF986758395B8D0AFA21' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='2'>
+	<div class='img-container' id='movie-img-2'></div>
 	<span class='movie-title-main'>这个杀手不太冷</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -111,8 +111,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='3'>
-	<img src='http://g2.ykimg.com/0516000055D573B167BC3C620A0AC1D7' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='3'>
+	<div class='img-container' id='movie-img-3'></div>
 	<span class='movie-title-main'>阿甘正传</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -126,8 +126,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='4'>
-	<img src='http://g4.ykimg.com/05160000534CA44167379F055B0BB00E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='4'>
+	<div class='img-container' id='movie-img-4'></div>
 	<span class='movie-title-main'>霸王别姬</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -141,8 +141,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='5'>
-	<img src='http://g1.ykimg.com/05160000522016B367583958B3006F79' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='5'>
+	<div class='img-container' id='movie-img-5'></div>
 	<span class='movie-title-main'>美丽人生</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -156,8 +156,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='6'>
-	<img src='http://g4.ykimg.com/051600005603538667BC3C147801D4F1' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='6'>
+	<div class='img-container' id='movie-img-6'></div>
 	<span class='movie-title-main'>海上钢琴师</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -171,14 +171,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='7'>
-	<img src='http://g1.ykimg.com/051600005322721D67379F61FF0CD838' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='7'>
+	<div class='img-container' id='movie-img-7'></div>
 	<span class='movie-title-main'>辛德勒的名单</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -192,8 +188,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='8'>
-	<img src='http://g2.ykimg.com/0516000052158E166758397B040C4EC6' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='8'>
+	<div class='img-container' id='movie-img-8'></div>
 	<span class='movie-title-main'>千与千寻</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -207,8 +203,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='9'>
-	<img src='http://g1.ykimg.com/051600005677A88F67BC3C6CDA0B3741' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='9'>
+	<div class='img-container' id='movie-img-9'></div>
 	<span class='movie-title-main'>机器人总动员</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -222,8 +218,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='10'>
-	<img src='http://g1.ykimg.com/0516000051B93B966758391DA70C821B' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='10'>
+	<div class='img-container' id='movie-img-10'></div>
 	<span class='movie-title-main'>盗梦空间</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -237,8 +233,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='11'>
-	<img src='http://g1.ykimg.com/051600005192FD72670C4A1ADC0DE10A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='11'>
+	<div class='img-container' id='movie-img-11'></div>
 	<span class='movie-title-main'>泰坦尼克号</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -252,8 +248,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='12'>
-	<img src='http://g4.ykimg.com/0516000051F391576758394A880B3EB3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='12'>
+	<div class='img-container' id='movie-img-12'></div>
 	<span class='movie-title-main'>三傻大闹宝莱坞</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -267,14 +263,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='13'>
-	<img src='http://g3.ykimg.com/051600005254E4D4675839113607E1B3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='13'>
+	<div class='img-container' id='movie-img-13'></div>
 	<span class='movie-title-main'>放牛班的春天</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -288,8 +280,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='14'>
-	<img src='http://g3.ykimg.com/051600005329338867379F7DEF051E6A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='14'>
+	<div class='img-container' id='movie-img-14'></div>
 	<span class='movie-title-main'>忠犬八公的故事</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -303,8 +295,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='15'>
-	<img src='http://g4.ykimg.com/051600004FBC9C7E9792737EB60A63E5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='15'>
+	<div class='img-container' id='movie-img-15'></div>
 	<span class='movie-title-main'>龙猫</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -318,8 +310,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='16'>
-	<img src='http://g1.ykimg.com/0516000052FC36926758392A00069115' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='16'>
+	<div class='img-container' id='movie-img-16'></div>
 	<span class='movie-title-main'>教父</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -333,8 +325,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='17'>
-	<img src='http://g4.ykimg.com/05160000543F904667379F654E09C880' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='17'>
+	<div class='img-container' id='movie-img-17'></div>
 	<span class='movie-title-main'>大话西游之大圣娶亲</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -348,8 +340,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='18'>
-	<img src='http://g3.ykimg.com/051600004FD4067197927307AC0A7518' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='18'>
+	<div class='img-container' id='movie-img-18'></div>
 	<span class='movie-title-main'>乱世佳人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -363,14 +355,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='19'>
-	<img src='http://g1.ykimg.com/0516000053B37C1267379F10C60CDD58' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='19'>
+	<div class='img-container' id='movie-img-19'></div>
 	<span class='movie-title-main'>天堂电影院</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -384,8 +372,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='20'>
-	<img src='http://g2.ykimg.com/0516000051B96878675839403C052E55' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='20'>
+	<div class='img-container' id='movie-img-20'></div>
 	<span class='movie-title-main'>当幸福来敲门</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -399,8 +387,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='21'>
-	<img src='http://g4.ykimg.com/05160000543C806E67379F196500C62E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='21'>
+	<div class='img-container' id='movie-img-21'></div>
 	<span class='movie-title-main'>搏击俱乐部</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -414,8 +402,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='22'>
-	<img src='http://g3.ykimg.com/05160000534E170C67379F05DF0C35F5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='22'>
+	<div class='img-container' id='movie-img-22'></div>
 	<span class='movie-title-main'>楚门的世界</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -429,8 +417,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='23'>
-	<img src='http://g3.ykimg.com/051600005195F6F367583919CF0747B3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='23'>
+	<div class='img-container' id='movie-img-23'></div>
 	<span class='movie-title-main'>触不可及</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -444,8 +432,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='24'>
-	<img src='http://g2.ykimg.com/0516000051B1A37F67583937910B2657' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='24'>
+	<div class='img-container' id='movie-img-24'></div>
 	<span class='movie-title-main'>指环王3：王者无敌</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -459,14 +447,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='25'>
-	<img src='http://g2.ykimg.com/05160000532E998467379F183D02DE0A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='25'>
+	<div class='img-container' id='movie-img-25'></div>
 	<span class='movie-title-main'>罗马假日</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -480,8 +464,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='26'>
-	<img src='http://g2.ykimg.com/0516000051F47D176758394A6B0A3C58' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='26'>
+	<div class='img-container' id='movie-img-26'></div>
 	<span class='movie-title-main'>十二怒汉</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -495,8 +479,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='27'>
-	<img src='http://g2.ykimg.com/051600005327BF2C67379F5DF4093FCF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='27'>
+	<div class='img-container' id='movie-img-27'></div>
 	<span class='movie-title-main'>两杆大烟枪</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -510,8 +494,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='28'>
-	<img src='http://g3.ykimg.com/0516000051F8CF86675839261B09686B' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='28'>
+	<div class='img-container' id='movie-img-28'></div>
 	<span class='movie-title-main'>海豚湾</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -525,8 +509,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='29'>
-	<img src='http://g2.ykimg.com/051600005434D8E667379F19E001B9C5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='29'>
+	<div class='img-container' id='movie-img-29'></div>
 	<span class='movie-title-main'>天空之城</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -540,8 +524,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='30'>
-	<img src='http://g4.ykimg.com/0516000051EC8AFA6758396F350CB8EF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='30'>
+	<div class='img-container' id='movie-img-30'></div>
 	<span class='movie-title-main'>飞屋环游记</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -555,14 +539,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='31'>
-	<img src='http://g1.ykimg.com/0516000051B1859367583927CF0375B2' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='31'>
+	<div class='img-container' id='movie-img-31'></div>
 	<span class='movie-title-main'>怦然心动</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -576,8 +556,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='32'>
-	<img src='http://g4.ykimg.com/051600004FB2341A0000015BB400542A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='32'>
+	<div class='img-container' id='movie-img-32'></div>
 	<span class='movie-title-main'>飞越疯人院</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -591,8 +571,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='33'>
-	<img src='http://g3.ykimg.com/0516000051D666A267583979CB05E2DE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='33'>
+	<div class='img-container' id='movie-img-33'></div>
 	<span class='movie-title-main'>大话西游之月光宝盒</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -606,8 +586,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='34'>
-	<img src='http://g3.ykimg.com/0516000052AEA5C1675839723F05FF75' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='34'>
+	<div class='img-container' id='movie-img-34'></div>
 	<span class='movie-title-main'>鬼子来了</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -621,8 +601,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='35'>
-	<img src='http://g1.ykimg.com/051600005268D58267583974B308558F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='35'>
+	<div class='img-container' id='movie-img-35'></div>
 	<span class='movie-title-main'>窃听风暴</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -636,8 +616,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='36'>
-	<img src='http://g3.ykimg.com/0516000052746F9567583970FF037B04' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='36'>
+	<div class='img-container' id='movie-img-36'></div>
 	<span class='movie-title-main'>无间道</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -651,14 +631,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='37'>
-	<img src='http://g2.ykimg.com/051600005205D6E6675839593702C0E0' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='37'>
+	<div class='img-container' id='movie-img-37'></div>
 	<span class='movie-title-main'>V字仇杀队</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -672,8 +648,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='38'>
-	<img src='http://g2.ykimg.com/0516000052AEBCF367583935B004D200' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='38'>
+	<div class='img-container' id='movie-img-38'></div>
 	<span class='movie-title-main'>天使爱美丽</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -687,8 +663,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='39'>
-	<img src='http://g2.ykimg.com/0516000051FE19896758390D9F02F162' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='39'>
+	<div class='img-container' id='movie-img-39'></div>
 	<span class='movie-title-main'>蝙蝠侠：黑暗骑士</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -702,8 +678,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='40'>
-	<img src='http://g3.ykimg.com/0516000051BE80EC6758397946018D4B' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='40'>
+	<div class='img-container' id='movie-img-40'></div>
 	<span class='movie-title-main'>闻香识女人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -717,8 +693,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='41'>
-	<img src='http://g4.ykimg.com/0516000055AF0BDF67BC3C27CB023D0C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='41'>
+	<div class='img-container' id='movie-img-41'></div>
 	<span class='movie-title-main'>熔炉</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -732,8 +708,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='42'>
-	<img src='http://g2.ykimg.com/0516000051B2E6A5675839215C06EB2E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='42'>
+	<div class='img-container' id='movie-img-42'></div>
 	<span class='movie-title-main'>少年派的奇幻漂流</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -747,14 +723,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='43'>
-	<img src='http://g1.ykimg.com/05160000535DF5B167379F05B602E0E7' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='43'>
+	<div class='img-container' id='movie-img-43'></div>
 	<span class='movie-title-main'>活着</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -768,8 +740,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='44'>
-	<img src='http://g2.ykimg.com/0516000052AA79E96758390B550BAD19' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='44'>
+	<div class='img-container' id='movie-img-44'></div>
 	<span class='movie-title-main'>美丽心灵</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -783,8 +755,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='45'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p1354436051.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='45'>
+	<div class='img-container' id='movie-img-45'></div>
 	<span class='movie-title-main'>指环王1：魔戒再现</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -798,8 +770,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='46'>
-	<img src='http://g3.ykimg.com/0516000051B1A4786758393081082FB7' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='46'>
+	<div class='img-container' id='movie-img-46'></div>
 	<span class='movie-title-main'>指环王2：双塔奇兵</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -813,8 +785,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='47'>
-	<img src='http://g1.ykimg.com/0516000054C6FD4B67379F73F9052FF6' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='47'>
+	<div class='img-container' id='movie-img-47'></div>
 	<span class='movie-title-main'>教父2</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -828,8 +800,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='48'>
-	<img src='http://g2.ykimg.com/0516000052FB46A86758394F330B8CA8' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='48'>
+	<div class='img-container' id='movie-img-48'></div>
 	<span class='movie-title-main'>七宗罪</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -843,14 +815,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='49'>
-	<img src='http://g2.ykimg.com/051600004FBC7D249792737E80073D5F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='49'>
+	<div class='img-container' id='movie-img-49'></div>
 	<span class='movie-title-main'>哈尔的移动城堡</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -864,8 +832,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='50'>
-	<img src='http://g4.ykimg.com/0516000052F5CF4D675839377F0F3F2B' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='50'>
+	<div class='img-container' id='movie-img-50'></div>
 	<span class='movie-title-main'>剪刀手爱德华</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -879,8 +847,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='51'>
-	<img src='http://g2.ykimg.com/05160000542117EA67379F18AA001541' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='51'>
+	<div class='img-container' id='movie-img-51'></div>
 	<span class='movie-title-main'>勇敢的心</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -894,8 +862,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='52'>
-	<img src='http://g4.ykimg.com/05160000533B756367379F7D390125BF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='52'>
+	<div class='img-container' id='movie-img-52'></div>
 	<span class='movie-title-main'>情书</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -909,8 +877,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='53'>
-	<img src='http://g3.ykimg.com/0516000053B61C9367379F11380D8414' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='53'>
+	<div class='img-container' id='movie-img-53'></div>
 	<span class='movie-title-main'>死亡诗社</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -924,8 +892,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='54'>
-	<img src='http://g2.ykimg.com/0516000053C34F0767379F159C0A97BB' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='54'>
+	<div class='img-container' id='movie-img-54'></div>
 	<span class='movie-title-main'>美国往事</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -939,14 +907,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='55'>
-	<img src='http://g2.ykimg.com/05160000529EBD966758393AB100B8D1' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='55'>
+	<div class='img-container' id='movie-img-55'></div>
 	<span class='movie-title-main'>钢琴家</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -960,8 +924,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='56'>
-	<img src='http://g2.ykimg.com/0516000051B19E616758392F3B0C66D2' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='56'>
+	<div class='img-container' id='movie-img-56'></div>
 	<span class='movie-title-main'>致命魔术</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -975,8 +939,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='57'>
-	<img src='http://g1.ykimg.com/051600004FB0C68D979273626A08EFB9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='57'>
+	<div class='img-container' id='movie-img-57'></div>
 	<span class='movie-title-main'>音乐之声</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -990,8 +954,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='58'>
-	<img src='http://g3.ykimg.com/051600005269CF1B6758393ADC04F50F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='58'>
+	<div class='img-container' id='movie-img-58'></div>
 	<span class='movie-title-main'>狮子王</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1005,8 +969,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='59'>
-	<img src='http://g3.ykimg.com/0516000051C3B838670C4A5514036C7F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='59'>
+	<div class='img-container' id='movie-img-59'></div>
 	<span class='movie-title-main'>被嫌弃的松子的一生</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1020,8 +984,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='60'>
-	<img src='http://g4.ykimg.com/051600005321117567379F5DEB0A23B9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='60'>
+	<div class='img-container' id='movie-img-60'></div>
 	<span class='movie-title-main'>小鞋子</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1035,14 +999,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='61'>
-	<img src='http://g1.ykimg.com/0516000053548D7F67379F05BB00759C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='61'>
+	<div class='img-container' id='movie-img-61'></div>
 	<span class='movie-title-main'>低俗小说</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1056,8 +1016,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='62'>
-	<img src='http://g1.ykimg.com/0516000051DA86E967583976CC0D0605' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='62'>
+	<div class='img-container' id='movie-img-62'></div>
 	<span class='movie-title-main'>入殓师</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1071,8 +1031,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='63'>
-	<img src='http://g3.ykimg.com/051600005502AD6267379F1CD903A4B8' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='63'>
+	<div class='img-container' id='movie-img-63'></div>
 	<span class='movie-title-main'>玛丽和马克思</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1086,8 +1046,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='64'>
-	<img src='http://g1.ykimg.com/051600005301A7826758394C5F0C46AF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='64'>
+	<div class='img-container' id='movie-img-64'></div>
 	<span class='movie-title-main'>蝴蝶效应</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1101,8 +1061,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='65'>
-	<img src='http://g1.ykimg.com/05160000534DF79267379F511909FD13' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='65'>
+	<div class='img-container' id='movie-img-65'></div>
 	<span class='movie-title-main'>沉默的羔羊</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1116,8 +1076,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='66'>
-	<img src='http://g2.ykimg.com/0516000051B18C2367583928DF07F33F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='66'>
+	<div class='img-container' id='movie-img-66'></div>
 	<span class='movie-title-main'>本杰明·巴顿奇事</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1131,14 +1091,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='67'>
-	<img src='http://g2.ykimg.com/0516000051B1A3E06758393CE60B4E90' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='67'>
+	<div class='img-container' id='movie-img-67'></div>
 	<span class='movie-title-main'>黑客帝国</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1152,8 +1108,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='68'>
-	<img src='http://g1.ykimg.com/05160000535722F367379F5110001888' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='68'>
+	<div class='img-container' id='movie-img-68'></div>
 	<span class='movie-title-main'>第六感</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1167,8 +1123,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='69'>
-	<img src='http://g3.ykimg.com/0516000054C9DB2C67379F68C20D18D0' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='69'>
+	<div class='img-container' id='movie-img-69'></div>
 	<span class='movie-title-main'>射雕英雄传之东成西就</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1182,8 +1138,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='70'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p692813374.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='70'>
+	<div class='img-container' id='movie-img-70'></div>
 	<span class='movie-title-main'>大鱼</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1197,8 +1153,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='71'>
-	<img src='http://g1.ykimg.com/0516000055D57D9D67BC3C61DA08F76F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='71'>
+	<div class='img-container' id='movie-img-71'></div>
 	<span class='movie-title-main'>拯救大兵瑞恩</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1212,8 +1168,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='72'>
-	<img src='http://g2.ykimg.com/05160000543F690367379F68440BD489' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='72'>
+	<div class='img-container' id='movie-img-72'></div>
 	<span class='movie-title-main'>幽灵公主</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1227,14 +1183,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='73'>
-	<img src='http://g4.ykimg.com/0516000051D6790367583906900BD83A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='73'>
+	<div class='img-container' id='movie-img-73'></div>
 	<span class='movie-title-main'>让子弹飞</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1248,8 +1200,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='74'>
-	<img src='http://g3.ykimg.com/051600005193253B670C4A550A0B7525' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='74'>
+	<div class='img-container' id='movie-img-74'></div>
 	<span class='movie-title-main'>阳光姐妹淘</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1263,8 +1215,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='75'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p967457079.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='75'>
+	<div class='img-container' id='movie-img-75'></div>
 	<span class='movie-title-main'>阳光灿烂的日子</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1278,8 +1230,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='76'>
-	<img src='http://g1.ykimg.com/0516000052200D176758393A1D0D21BE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='76'>
+	<div class='img-container' id='movie-img-76'></div>
 	<span class='movie-title-main'>心灵捕手</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1293,8 +1245,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='77'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p792400696.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='77'>
+	<div class='img-container' id='movie-img-77'></div>
 	<span class='movie-title-main'>西西里的美丽传说</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1308,8 +1260,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='78'>
-	<img src='http://g4.ykimg.com/05160000535DC86F67379F05D1046BAF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='78'>
+	<div class='img-container' id='movie-img-78'></div>
 	<span class='movie-title-main'>饮食男女</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1323,14 +1275,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='79'>
-	<img src='http://g2.ykimg.com/05160000529FD9AD67583903F003E3DE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='79'>
+	<div class='img-container' id='movie-img-79'></div>
 	<span class='movie-title-main'>上帝之城</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1344,8 +1292,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='80'>
-	<img src='http://g1.ykimg.com/051600004FB2B70A0000015BB407C67A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='80'>
+	<div class='img-container' id='movie-img-80'></div>
 	<span class='movie-title-main'>萤火虫之墓</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1359,8 +1307,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='81'>
-	<img src='http://g1.ykimg.com/0516000052D6416E6758396EF20A3BBD' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='81'>
+	<div class='img-container' id='movie-img-81'></div>
 	<span class='movie-title-main'>大闹天宫</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1374,8 +1322,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='82'>
-	<img src='http://g3.ykimg.com/0516000053031BA467583957DB012D26' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='82'>
+	<div class='img-container' id='movie-img-82'></div>
 	<span class='movie-title-main'>重庆森林</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1389,8 +1337,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='83'>
-	<img src='http://g2.ykimg.com/0516000051D62E196758391B0108B26C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='83'>
+	<div class='img-container' id='movie-img-83'></div>
 	<span class='movie-title-main'>甜蜜蜜</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1404,8 +1352,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='84'>
-	<img src='http://g1.ykimg.com/05160000534DFCD867379F059006D09F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='84'>
+	<div class='img-container' id='movie-img-84'></div>
 	<span class='movie-title-main'>春光乍泄</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1419,14 +1367,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='85'>
-	<img src='http://g4.ykimg.com/051600005237C5646758396DF80040D0' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='85'>
+	<div class='img-container' id='movie-img-85'></div>
 	<span class='movie-title-main'>加勒比海盗</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1440,8 +1384,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='86'>
-	<img src='http://g3.ykimg.com/0516000051EE4A4167583924D003B0B3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='86'>
+	<div class='img-container' id='movie-img-86'></div>
 	<span class='movie-title-main'>爱在黎明破晓前</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1455,8 +1399,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='87'>
-	<img src='http://g3.ykimg.com/051600005497BECD67379F6BBA016614' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='87'>
+	<div class='img-container' id='movie-img-87'></div>
 	<span class='movie-title-main'>告白</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1470,8 +1414,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='88'>
-	<img src='http://g3.ykimg.com/051600004FB2CAD50000015BB400421D' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='88'>
+	<div class='img-container' id='movie-img-88'></div>
 	<span class='movie-title-main'>风之谷</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1485,8 +1429,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='89'>
-	<img src='http://g1.ykimg.com/051600005279C7656758396EEE069340' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='89'>
+	<div class='img-container' id='movie-img-89'></div>
 	<span class='movie-title-main'>致命ID</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1500,8 +1444,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='90'>
-	<img src='http://g1.ykimg.com/051600005258A93D67583977DE0359C1' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='90'>
+	<div class='img-container' id='movie-img-90'></div>
 	<span class='movie-title-main'>一一</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1515,14 +1459,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='91'>
-	<img src='http://g3.ykimg.com/051600005627610B67BC3C5D7305A3AA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='91'>
+	<div class='img-container' id='movie-img-91'></div>
 	<span class='movie-title-main'>海洋</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1536,8 +1476,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='92'>
-	<img src='http://g3.ykimg.com/0516000052E226256758395622026B70' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='92'>
+	<div class='img-container' id='movie-img-92'></div>
 	<span class='movie-title-main'>燃情岁月</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1551,8 +1491,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='93'>
-	<img src='http://g2.ykimg.com/0516000052B3FD4B6758397ED8048236' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='93'>
+	<div class='img-container' id='movie-img-93'></div>
 	<span class='movie-title-main'>辩护人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1566,8 +1506,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='94'>
-	<img src='http://g1.ykimg.com/05160000525765036758392D6E0A4CD4' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='94'>
+	<div class='img-container' id='movie-img-94'></div>
 	<span class='movie-title-main'>爱在日落黄昏时</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1581,8 +1521,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='95'>
-	<img src='http://g1.ykimg.com/0516000051F71C0A675839638704D298' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='95'>
+	<div class='img-container' id='movie-img-95'></div>
 	<span class='movie-title-main'>阿凡达</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1596,8 +1536,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='96'>
-	<img src='http://g3.ykimg.com/0516000051931F2E670C4A550B084040' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='96'>
+	<div class='img-container' id='movie-img-96'></div>
 	<span class='movie-title-main'>禁闭岛</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1611,14 +1551,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='97'>
-	<img src='http://g1.ykimg.com/0516000053E5E8EE67379F111A013513' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='97'>
+	<div class='img-container' id='movie-img-97'></div>
 	<span class='movie-title-main'>驯龙高手</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1632,8 +1568,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='98'>
-	<img src='http://g2.ykimg.com/051600004FB1DCB00000012504071A23' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='98'>
+	<div class='img-container' id='movie-img-98'></div>
 	<span class='movie-title-main'>侧耳倾听</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1647,8 +1583,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='99'>
-	<img src='http://g4.ykimg.com/0516000054C5D2E367379F737501FB74' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='99'>
+	<div class='img-container' id='movie-img-99'></div>
 	<span class='movie-title-main'>虎口脱险</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1662,8 +1598,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='100'>
-	<img src='http://g4.ykimg.com/05160000525785F567583923F4047BD3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='100'>
+	<div class='img-container' id='movie-img-100'></div>
 	<span class='movie-title-main'>幸福终点站</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1677,8 +1613,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='101'>
-	<img src='http://g3.ykimg.com/051600005313F4F567583913830F0AAC' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='101'>
+	<div class='img-container' id='movie-img-101'></div>
 	<span class='movie-title-main'>超脱</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1692,8 +1628,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='102'>
-	<img src='http://g2.ykimg.com/0516000052842DD867583932E5027860' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='102'>
+	<div class='img-container' id='movie-img-102'></div>
 	<span class='movie-title-main'>真爱至上</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1707,14 +1643,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='103'>
-	<img src='http://g3.ykimg.com/0516000051D23CA66758395D910CD783' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='103'>
+	<div class='img-container' id='movie-img-103'></div>
 	<span class='movie-title-main'>神偷奶爸</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1728,8 +1660,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='104'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p2163771304.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='104'>
+	<div class='img-container' id='movie-img-104'></div>
 	<span class='movie-title-main'>电锯惊魂</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1743,8 +1675,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='105'>
-	<img src='http://g1.ykimg.com/051600005302D3456758393D1A0AF210' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='105'>
+	<div class='img-container' id='movie-img-105'></div>
 	<span class='movie-title-main'>菊次郎的夏天</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1758,8 +1690,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='106'>
-	<img src='http://g2.ykimg.com/0516000051C3B80A670C4A5517089BB5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='106'>
+	<div class='img-container' id='movie-img-106'></div>
 	<span class='movie-title-main'>借东西的小人阿莉埃蒂</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1773,8 +1705,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='107'>
-	<img src='http://g3.ykimg.com/05160000512ACF35979273169904821E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='107'>
+	<div class='img-container' id='movie-img-107'></div>
 	<span class='movie-title-main'>摩登时代</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1788,8 +1720,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='108'>
-	<img src='http://g2.ykimg.com/0516000051C3AFD4670C4A551A036396' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='108'>
+	<div class='img-container' id='movie-img-108'></div>
 	<span class='movie-title-main'>岁月神偷</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1803,14 +1735,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='109'>
-	<img src='http://g2.ykimg.com/0516000053B617CC67379F105C0A34BB' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='109'>
+	<div class='img-container' id='movie-img-109'></div>
 	<span class='movie-title-main'>雨人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1824,8 +1752,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='110'>
-	<img src='http://g4.ykimg.com/0516000051FDB73967583954BD057E52' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='110'>
+	<div class='img-container' id='movie-img-110'></div>
 	<span class='movie-title-main'>贫民窟的百万富翁</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1839,8 +1767,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='111'>
-	<img src='http://g4.ykimg.com/0516000051BA806367583978AD0DFA1C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='111'>
+	<div class='img-container' id='movie-img-111'></div>
 	<span class='movie-title-main'>断背山</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1854,8 +1782,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='112'>
-	<img src='http://g2.ykimg.com/05160000525765566758390779054DED' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='112'>
+	<div class='img-container' id='movie-img-112'></div>
 	<span class='movie-title-main'>恋恋笔记本</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1869,8 +1797,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='113'>
-	<img src='http://g3.ykimg.com/0516000052A12E2867583941D506E7F0' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='113'>
+	<div class='img-container' id='movie-img-113'></div>
 	<span class='movie-title-main'>猫鼠游戏</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1884,8 +1812,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='114'>
-	<img src='http://g1.ykimg.com/0516000052D3839367583938860096AF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='114'>
+	<div class='img-container' id='movie-img-114'></div>
 	<span class='movie-title-main'>魂断蓝桥</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1899,14 +1827,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='115'>
-	<img src='http://g2.ykimg.com/0516000052A913586758396B8703E96C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='115'>
+	<div class='img-container' id='movie-img-115'></div>
 	<span class='movie-title-main'>记忆碎片</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1920,8 +1844,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='116'>
-	<img src='http://g1.ykimg.com/05160000552CD36A67379F6BED02978C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='116'>
+	<div class='img-container' id='movie-img-116'></div>
 	<span class='movie-title-main'>穿越时空的少女</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1935,8 +1859,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='117'>
-	<img src='http://g2.ykimg.com/0516000051F71C7967583914D7064028' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='117'>
+	<div class='img-container' id='movie-img-117'></div>
 	<span class='movie-title-main'>东邪西毒</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1950,8 +1874,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='118'>
-	<img src='http://g3.ykimg.com/05160000534DF54067379F05530624BB' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='118'>
+	<div class='img-container' id='movie-img-118'></div>
 	<span class='movie-title-main'>猜火车</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1965,8 +1889,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='119'>
-	<img src='http://g1.ykimg.com/0516000051E8B8B267583955720C663C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='119'>
+	<div class='img-container' id='movie-img-119'></div>
 	<span class='movie-title-main'>谍影重重3</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1980,8 +1904,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='120'>
-	<img src='http://g3.ykimg.com/051600005282F21B675839538404093D' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='120'>
+	<div class='img-container' id='movie-img-120'></div>
 	<span class='movie-title-main'>素媛</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -1995,14 +1919,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='121'>
-	<img src='http://g4.ykimg.com/0516000051D4DE1567583910950684A9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='121'>
+	<div class='img-container' id='movie-img-121'></div>
 	<span class='movie-title-main'>疯狂原始人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2016,8 +1936,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='122'>
-	<img src='http://g4.ykimg.com/051600005677C8E667BC3C6D5F041399' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='122'>
+	<div class='img-container' id='movie-img-122'></div>
 	<span class='movie-title-main'>怪兽电力公司</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2031,8 +1951,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='123'>
-	<img src='http://g3.ykimg.com/0516000054A0EADD67379F635805A866' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='123'>
+	<div class='img-container' id='movie-img-123'></div>
 	<span class='movie-title-main'>七武士</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2046,8 +1966,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='124'>
-	<img src='http://g3.ykimg.com/051600005306BA3767583971B0059DF3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='124'>
+	<div class='img-container' id='movie-img-124'></div>
 	<span class='movie-title-main'>倩女幽魂</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2061,8 +1981,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='125'>
-	<img src='http://g4.ykimg.com/051600005264970467583915C909813C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='125'>
+	<div class='img-container' id='movie-img-125'></div>
 	<span class='movie-title-main'>卢旺达饭店</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2076,8 +1996,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='126'>
-	<img src='http://g1.ykimg.com/051600004FB2AFA80000015BB405FB76' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='126'>
+	<div class='img-container' id='movie-img-126'></div>
 	<span class='movie-title-main'>秒速5厘米</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2091,14 +2011,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='127'>
-	<img src='http://g2.ykimg.com/05160000521FFE4F6758394E20041186' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='127'>
+	<div class='img-container' id='movie-img-127'></div>
 	<span class='movie-title-main'>穿条纹睡衣的男孩</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2112,8 +2028,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='128'>
-	<img src='http://g3.ykimg.com/0516000051BC00246758390FA2012814' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='128'>
+	<div class='img-container' id='movie-img-128'></div>
 	<span class='movie-title-main'>我是山姆</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2127,8 +2043,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='129'>
-	<img src='http://g3.ykimg.com/0516000052D343556758394B2F033365' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='129'>
+	<div class='img-container' id='movie-img-129'></div>
 	<span class='movie-title-main'>狩猎</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2142,8 +2058,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='130'>
-	<img src='http://g2.ykimg.com/0516000055D68A5467BC3C61D20A89EE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='130'>
+	<div class='img-container' id='movie-img-130'></div>
 	<span class='movie-title-main'>人工智能</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2157,8 +2073,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='131'>
-	<img src='http://g4.ykimg.com/0516000052BA7F6C6758391131034CF0' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='131'>
+	<div class='img-container' id='movie-img-131'></div>
 	<span class='movie-title-main'>哈利·波特与魔法石</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2172,8 +2088,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='132'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p2178872593.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='132'>
+	<div class='img-container' id='movie-img-132'></div>
 	<span class='movie-title-main'>布达佩斯大饭店</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2187,14 +2103,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='133'>
-	<img src='http://g2.ykimg.com/0516000051B92BB16758392C2402B60A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='133'>
+	<div class='img-container' id='movie-img-133'></div>
 	<span class='movie-title-main'>傲慢与偏见</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2208,8 +2120,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='134'>
-	<img src='http://g2.ykimg.com/0516000053B60E5967379F154F0A49A7' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='134'>
+	<div class='img-container' id='movie-img-134'></div>
 	<span class='movie-title-main'>碧海蓝天</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2223,8 +2135,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='135'>
-	<img src='http://g3.ykimg.com/0516000052BCF88767583905F80138F2' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='135'>
+	<div class='img-container' id='movie-img-135'></div>
 	<span class='movie-title-main'>黑天鹅</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2238,8 +2150,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='136'>
-	<img src='http://g1.ykimg.com/051600005318424A6758395D95038CE4' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='136'>
+	<div class='img-container' id='movie-img-136'></div>
 	<span class='movie-title-main'>玩具总动员3</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2253,8 +2165,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='137'>
-	<img src='http://g1.ykimg.com/05160000540942FC67379F10B20676E6' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='137'>
+	<div class='img-container' id='movie-img-137'></div>
 	<span class='movie-title-main'>雨中曲</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2268,8 +2180,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='138'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p792403691.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='138'>
+	<div class='img-container' id='movie-img-138'></div>
 	<span class='movie-title-main'>完美的世界</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2283,14 +2195,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='139'>
-	<img src='http://g1.ykimg.com/0516000052FC36926758392A00069115' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='139'>
+	<div class='img-container' id='movie-img-139'></div>
 	<span class='movie-title-main'>教父3</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2304,8 +2212,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='140'>
-	<img src='http://g4.ykimg.com/0516000051EB56BC67583970EC040BFA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='140'>
+	<div class='img-container' id='movie-img-140'></div>
 	<span class='movie-title-main'>香水</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2319,8 +2227,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='141'>
-	<img src='http://g3.ykimg.com/05160000543B293F67379F195D04F429' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='141'>
+	<div class='img-container' id='movie-img-141'></div>
 	<span class='movie-title-main'>冰川时代</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2334,8 +2242,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='142'>
-	<img src='http://g4.ykimg.com/05160000521AE34067583965EE04AB51' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='142'>
+	<div class='img-container' id='movie-img-142'></div>
 	<span class='movie-title-main'>撞车</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2349,8 +2257,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='143'>
-	<img src='http://g3.ykimg.com/051600005429231767379F19A9055B85' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='143'>
+	<div class='img-container' id='movie-img-143'></div>
 	<span class='movie-title-main'>英雄本色</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2364,8 +2272,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='144'>
-	<img src='http://g1.ykimg.com/051600004FF91EC597927329300A1600' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='144'>
+	<div class='img-container' id='movie-img-144'></div>
 	<span class='movie-title-main'>控方证人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2379,14 +2287,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='145'>
-	<img src='http://g3.ykimg.com/051600005303287F6758392BA902D70E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='145'>
+	<div class='img-container' id='movie-img-145'></div>
 	<span class='movie-title-main'>纵横四海</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2400,8 +2304,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='146'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p480225538.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='146'>
+	<div class='img-container' id='movie-img-146'></div>
 	<span class='movie-title-main'>杀人回忆</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2415,8 +2319,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='147'>
-	<img src='http://g1.ykimg.com/0516000051EF4E3D675839107D090500' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='147'>
+	<div class='img-container' id='movie-img-147'></div>
 	<span class='movie-title-main'>海盗电台</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2430,8 +2334,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='148'>
-	<img src='http://g1.ykimg.com/0516000051F1EDF4675839429E0F40EA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='148'>
+	<div class='img-container' id='movie-img-148'></div>
 	<span class='movie-title-main'>浪潮</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2445,8 +2349,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='149'>
-	<img src='http://g4.ykimg.com/0516000053AA5CDA67379F14F306F605' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='149'>
+	<div class='img-container' id='movie-img-149'></div>
 	<span class='movie-title-main'>末代皇帝</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2460,8 +2364,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='150'>
-	<img src='http://g4.ykimg.com/051600005440801C67379F1A7D036EDE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='150'>
+	<div class='img-container' id='movie-img-150'></div>
 	<span class='movie-title-main'>星际穿越</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2475,14 +2379,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='151'>
-	<img src='http://g3.ykimg.com/0516000051DE4773675839316007C6C3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='151'>
+	<div class='img-container' id='movie-img-151'></div>
 	<span class='movie-title-main'>可可西里</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2496,8 +2396,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='152'>
-	<img src='http://g4.ykimg.com/0516000052B7ED026758397765012826' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='152'>
+	<div class='img-container' id='movie-img-152'></div>
 	<span class='movie-title-main'>迁徙的鸟</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2511,8 +2411,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='153'>
-	<img src='http://g3.ykimg.com/0516000051E4BDC767583943DC070321' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='153'>
+	<div class='img-container' id='movie-img-153'></div>
 	<span class='movie-title-main'>荒野生存</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2526,8 +2426,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='154'>
-	<img src='http://g3.ykimg.com/051600004FB2D9760000015BB40876FD' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='154'>
+	<div class='img-container' id='movie-img-154'></div>
 	<span class='movie-title-main'>喜宴</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2541,8 +2441,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='155'>
-	<img src='http://g2.ykimg.com/051600005192F9B8670C4A1AE107BEE5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='155'>
+	<div class='img-container' id='movie-img-155'></div>
 	<span class='movie-title-main'>萤火之森</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2556,8 +2456,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='156'>
-	<img src='http://g3.ykimg.com/0516000051DB8006675839427807DEDF' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='156'>
+	<div class='img-container' id='movie-img-156'></div>
 	<span class='movie-title-main'>朗读者</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2571,14 +2471,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='157'>
-	<img src='http://g4.ykimg.com/05160000530323B467583945A1089596' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='157'>
+	<div class='img-container' id='movie-img-157'></div>
 	<span class='movie-title-main'>追随</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2592,8 +2488,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='158'>
-	<img src='http://g2.ykimg.com/05160000522698036758391BBF0BA55C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='158'>
+	<div class='img-container' id='movie-img-158'></div>
 	<span class='movie-title-main'>战争之王</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2607,8 +2503,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='159'>
-	<img src='http://g2.ykimg.com/0516000052B100D5675839372F0DD1E5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='159'>
+	<div class='img-container' id='movie-img-159'></div>
 	<span class='movie-title-main'>梦之安魂曲</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2622,8 +2518,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='160'>
-	<img src='http://g4.ykimg.com/051600004FB2C84C0000015BB40921E1' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='160'>
+	<div class='img-container' id='movie-img-160'></div>
 	<span class='movie-title-main'>红辣椒</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2637,8 +2533,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='161'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p532195562.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='161'>
+	<div class='img-container' id='movie-img-161'></div>
 	<span class='movie-title-main'>燕尾蝶</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2652,8 +2548,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='162'>
-	<img src='http://g1.ykimg.com/05160000512ABCD397927316A20E58AA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='162'>
+	<div class='img-container' id='movie-img-162'></div>
 	<span class='movie-title-main'>罗生门</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2667,14 +2563,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='163'>
-	<img src='http://g3.ykimg.com/05160000530AB1736758394F0D0E09F6' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='163'>
+	<div class='img-container' id='movie-img-163'></div>
 	<span class='movie-title-main'>绿里奇迹</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2688,8 +2580,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='164'>
-	<img src='http://g4.ykimg.com/0516000052A917506758396A59034D19' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='164'>
+	<div class='img-container' id='movie-img-164'></div>
 	<span class='movie-title-main'>叫我第一名</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2703,8 +2595,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='165'>
-	<img src='http://g4.ykimg.com/051600005237E7D96758396C600E15DA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='165'>
+	<div class='img-container' id='movie-img-165'></div>
 	<span class='movie-title-main'>勇闯夺命岛</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2718,8 +2610,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='166'>
-	<img src='http://g1.ykimg.com/0516000051EF473767583906080409F9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='166'>
+	<div class='img-container' id='movie-img-166'></div>
 	<span class='movie-title-main'>地球上的星星</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2733,8 +2625,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='167'>
-	<img src='http://g4.ykimg.com/05160000509C7F349792734A34019D48' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='167'>
+	<div class='img-container' id='movie-img-167'></div>
 	<span class='movie-title-main'>一次别离</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2748,8 +2640,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='168'>
-	<img src='http://g3.ykimg.com/0516000051B2EED2675839155701314B' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='168'>
+	<div class='img-container' id='movie-img-168'></div>
 	<span class='movie-title-main'>哈利·波特与死亡圣器(下)</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2763,14 +2655,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='169'>
-	<img src='http://g4.ykimg.com/0516000051A5C92C675839739A07B0C9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='169'>
+	<div class='img-container' id='movie-img-169'></div>
 	<span class='movie-title-main'>谍影重重</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2784,8 +2672,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='170'>
-	<img src='http://g2.ykimg.com/05160000535DC88F67379F50E6053AF9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='170'>
+	<div class='img-container' id='movie-img-170'></div>
 	<span class='movie-title-main'>英国病人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2799,8 +2687,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='171'>
-	<img src='http://g3.ykimg.com/0516000052D343BA67583925180BFD54' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='171'>
+	<div class='img-container' id='movie-img-171'></div>
 	<span class='movie-title-main'>卡萨布兰卡</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2814,8 +2702,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='172'>
-	<img src='http://g1.ykimg.com/05160000534DF05D67379F50F00BFAA1' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='172'>
+	<div class='img-container' id='movie-img-172'></div>
 	<span class='movie-title-main'>变脸</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2829,8 +2717,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='173'>
-	<img src='http://g1.ykimg.com/0516000052818AEA675839619A0CF908' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='173'>
+	<div class='img-container' id='movie-img-173'></div>
 	<span class='movie-title-main'>两小无猜</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2844,8 +2732,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='174'>
-	<img src='http://g3.ykimg.com/0516000051BEC6F4675839149909B360' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='174'>
+	<div class='img-container' id='movie-img-174'></div>
 	<span class='movie-title-main'>谍影重重2</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2859,14 +2747,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='175'>
-	<img src='http://g4.ykimg.com/0516000052B7EAB6675839276308F55F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='175'>
+	<div class='img-container' id='movie-img-175'></div>
 	<span class='movie-title-main'>穆赫兰道</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2880,8 +2764,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='176'>
-	<img src='http://img6.douban.com/view/movie_poster_cover/ipst/public/p984732992.jpg' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='176'>
+	<div class='img-container' id='movie-img-176'></div>
 	<span class='movie-title-main'>E.T. 外星人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2895,8 +2779,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='177'>
-	<img src='http://g4.ykimg.com/0516000051F77DFE67583917D5054132' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='177'>
+	<div class='img-container' id='movie-img-177'></div>
 	<span class='movie-title-main'>恐怖直播</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2910,8 +2794,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='178'>
-	<img src='http://g1.ykimg.com/0516000054199AF867379F17D40AC4EA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='178'>
+	<div class='img-container' id='movie-img-178'></div>
 	<span class='movie-title-main'>曾经</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2925,8 +2809,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='179'>
-	<img src='http://g2.ykimg.com/0516000051D62CE867583964A60A83A5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='179'>
+	<div class='img-container' id='movie-img-179'></div>
 	<span class='movie-title-main'>7号房的礼物</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2940,8 +2824,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='180'>
-	<img src='http://g3.ykimg.com/0516000053548EA767379F50F2033298' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='180'>
+	<div class='img-container' id='movie-img-180'></div>
 	<span class='movie-title-main'>阿飞正传</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2955,14 +2839,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='181'>
-	<img src='http://g1.ykimg.com/0516000051EF6E5167583920CB03B2FC' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='181'>
+	<div class='img-container' id='movie-img-181'></div>
 	<span class='movie-title-main'>这个男人来自地球</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2976,8 +2856,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='182'>
-	<img src='http://g3.ykimg.com/05160000530713A96758390FDA03D213' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='182'>
+	<div class='img-container' id='movie-img-182'></div>
 	<span class='movie-title-main'>上帝也疯狂</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -2991,8 +2871,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='183'>
-	<img src='http://g3.ykimg.com/0516000052A6B33067583979FD0E70EC' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='183'>
+	<div class='img-container' id='movie-img-183'></div>
 	<span class='movie-title-main'>花样年华</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3006,8 +2886,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='184'>
-	<img src='http://g2.ykimg.com/05160000519306C5670C4A1ADD0A6B46' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='184'>
+	<div class='img-container' id='movie-img-184'></div>
 	<span class='movie-title-main'>爱·回家</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3021,8 +2901,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='185'>
-	<img src='http://g1.ykimg.com/05160000543F680467379F66A902BD76' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='185'>
+	<div class='img-container' id='movie-img-185'></div>
 	<span class='movie-title-main'>魔女宅急便</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3036,8 +2916,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='186'>
-	<img src='http://g4.ykimg.com/0516000051D6462B67583972620CB419' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='186'>
+	<div class='img-container' id='movie-img-186'></div>
 	<span class='movie-title-main'>惊魂记</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3051,14 +2931,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='187'>
-	<img src='http://g3.ykimg.com/0516000054B382A567379F1D3806B63E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='187'>
+	<div class='img-container' id='movie-img-187'></div>
 	<span class='movie-title-main'>非常嫌疑犯</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3072,8 +2948,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='188'>
-	<img src='http://g3.ykimg.com/0516000051D6747667583932FD05AF6A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='188'>
+	<div class='img-container' id='movie-img-188'></div>
 	<span class='movie-title-main'>唐伯虎点秋香</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3087,8 +2963,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='189'>
-	<img src='http://g2.ykimg.com/0516000053FC26D267379F15020D9B92' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='189'>
+	<div class='img-container' id='movie-img-189'></div>
 	<span class='movie-title-main'>蓝色大门</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3102,8 +2978,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='190'>
-	<img src='http://g1.ykimg.com/0516000051F730F067583971670F4145' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='190'>
+	<div class='img-container' id='movie-img-190'></div>
 	<span class='movie-title-main'>爱在暹罗</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3117,8 +2993,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='191'>
-	<img src='http://g3.ykimg.com/051600005365EF4667379F055100E402' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='191'>
+	<div class='img-container' id='movie-img-191'></div>
 	<span class='movie-title-main'>发条橙</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3132,8 +3008,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='192'>
-	<img src='http://g4.ykimg.com/05160000530319FA675839587A0A96FA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='192'>
+	<div class='img-container' id='movie-img-192'></div>
 	<span class='movie-title-main'>终结者2</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3147,14 +3023,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='193'>
-	<img src='http://r3.ykimg.com/054204085245B76A6A0A43540D72EDAA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='193'>
+	<div class='img-container' id='movie-img-193'></div>
 	<span class='movie-title-main'>蝴蝶</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3168,8 +3040,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='194'>
-	<img src='http://g3.ykimg.com/0516000051FF74A86758391F6903AE37' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='194'>
+	<div class='img-container' id='movie-img-194'></div>
 	<span class='movie-title-main'>巴黎淘气帮</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3183,8 +3055,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='195'>
-	<img src='http://g3.ykimg.com/0516000051DA27F867583909010BDBDE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='195'>
+	<div class='img-container' id='movie-img-195'></div>
 	<span class='movie-title-main'>时空恋旅人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3198,8 +3070,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='196'>
-	<img src='http://g3.ykimg.com/0516000053213E1A67379F624D08944A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='196'>
+	<div class='img-container' id='movie-img-196'></div>
 	<span class='movie-title-main'>喜剧之王</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3213,8 +3085,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='197'>
-	<img src='http://g1.ykimg.com/0516000052B3D49667583934CF07F7DE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='197'>
+	<div class='img-container' id='movie-img-197'></div>
 	<span class='movie-title-main'>麦兜故事</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3228,8 +3100,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='198'>
-	<img src='http://g4.ykimg.com/0516000050B853B89792733A3A09AC75' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='198'>
+	<div class='img-container' id='movie-img-198'></div>
 	<span class='movie-title-main'>与狼共舞</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3243,14 +3115,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='199'>
-	<img src='http://g1.ykimg.com/05160000535DC01067379F50F40A87A6' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='199'>
+	<div class='img-container' id='movie-img-199'></div>
 	<span class='movie-title-main'>夜访吸血鬼</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3264,8 +3132,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='200'>
-	<img src='http://g1.ykimg.com/0516000054D2D14967379F1D880748EA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='200'>
+	<div class='img-container' id='movie-img-200'></div>
 	<span class='movie-title-main'>哪吒闹海</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3279,8 +3147,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='201'>
-	<img src='http://g2.ykimg.com/05160000535DF27C67379F04DB0556D9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='201'>
+	<div class='img-container' id='movie-img-201'></div>
 	<span class='movie-title-main'>中央车站</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3294,8 +3162,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='202'>
-	<img src='http://g3.ykimg.com/0516000051F8D2E267583922E60F3CFC' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='202'>
+	<div class='img-container' id='movie-img-202'></div>
 	<span class='movie-title-main'>恐怖游轮</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3309,8 +3177,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='203'>
-	<img src='http://g3.ykimg.com/0516000051D65BF66758392ABC0B9FB5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='203'>
+	<div class='img-container' id='movie-img-203'></div>
 	<span class='movie-title-main'>初恋这件小事</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3324,8 +3192,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='204'>
-	<img src='http://g4.ykimg.com/051600005329338867379F7DEF051E6A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='204'>
+	<div class='img-container' id='movie-img-204'></div>
 	<span class='movie-title-main'>忠犬八公物语</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3339,14 +3207,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='205'>
-	<img src='http://g3.ykimg.com/05160000530FE749675839366B000961' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='205'>
+	<div class='img-container' id='movie-img-205'></div>
 	<span class='movie-title-main'>美国丽人</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3360,8 +3224,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='206'>
-	<img src='http://g2.ykimg.com/0516000051CBDFCA67583913E2025397' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='206'>
+	<div class='img-container' id='movie-img-206'></div>
 	<span class='movie-title-main'>末路狂花</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3375,8 +3239,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='207'>
-	<img src='http://g4.ykimg.com/051600004FF112A99792733F0706FBE5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='207'>
+	<div class='img-container' id='movie-img-207'></div>
 	<span class='movie-title-main'>勇士</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3390,8 +3254,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='208'>
-	<img src='http://g3.ykimg.com/0516000051BAE0E667583917CC015DAC' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='208'>
+	<div class='img-container' id='movie-img-208'></div>
 	<span class='movie-title-main'>暖暖内含光</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3405,8 +3269,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='209'>
-	<img src='http://g1.ykimg.com/05160000519305C6670C4A1AD707A115' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='209'>
+	<div class='img-container' id='movie-img-209'></div>
 	<span class='movie-title-main'>新龙门客栈</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3420,8 +3284,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='210'>
-	<img src='http://g2.ykimg.com/0516000051B1A3E06758393CE60B4E90' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='210'>
+	<div class='img-container' id='movie-img-210'></div>
 	<span class='movie-title-main'>黑客帝国3：矩阵革命</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3435,14 +3299,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='211'>
-	<img src='http://g4.ykimg.com/051600004FB2A31E0000015BB400FAAC' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='211'>
+	<div class='img-container' id='movie-img-211'></div>
 	<span class='movie-title-main'>黄金三镖客</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3456,8 +3316,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='212'>
-	<img src='http://g1.ykimg.com/0516000051D65A316758392A15015C78' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='212'>
+	<div class='img-container' id='movie-img-212'></div>
 	<span class='movie-title-main'>源代码</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3471,8 +3331,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='213'>
-	<img src='http://g1.ykimg.com/0516000051C3B8B2670C4A550408B090' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='213'>
+	<div class='img-container' id='movie-img-213'></div>
 	<span class='movie-title-main'>罪恶之城</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3486,8 +3346,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='214'>
-	<img src='http://g1.ykimg.com/0516000051B18D93675839362006A427' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='214'>
+	<div class='img-container' id='movie-img-214'></div>
 	<span class='movie-title-main'>遗愿清单</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3501,8 +3361,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='215'>
-	<img src='http://g1.ykimg.com/0516000055826B7D67BC3C403A087B32' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='215'>
+	<div class='img-container' id='movie-img-215'></div>
 	<span class='movie-title-main'>再次出发之纽约遇见你</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3516,8 +3376,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='216'>
-	<img src='http://g4.ykimg.com/051600005302C19B67583936BF09743B' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='216'>
+	<div class='img-container' id='movie-img-216'></div>
 	<span class='movie-title-main'>青蛇</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3531,14 +3391,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='217'>
-	<img src='http://g2.ykimg.com/0516000052B01827675839395105B168' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='217'>
+	<div class='img-container' id='movie-img-217'></div>
 	<span class='movie-title-main'>偷拐抢骗</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3552,8 +3408,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='218'>
-	<img src='http://g4.ykimg.com/0516000051528DEB9792735C400B2BFB' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='218'>
+	<div class='img-container' id='movie-img-218'></div>
 	<span class='movie-title-main'>城市之光</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3567,8 +3423,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='219'>
-	<img src='http://g2.ykimg.com/0516000051C3B858670C4A551400E15E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='219'>
+	<div class='img-container' id='movie-img-219'></div>
 	<span class='movie-title-main'>无耻混蛋</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3582,8 +3438,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='220'>
-	<img src='http://g2.ykimg.com/0516000051B2E43A675839109501AF11' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='220'>
+	<div class='img-container' id='movie-img-220'></div>
 	<span class='movie-title-main'>蝙蝠侠：黑暗骑士崛起</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3597,8 +3453,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='221'>
-	<img src='http://g2.ykimg.com/0516000052AEABA0675839725C08A3DA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='221'>
+	<div class='img-container' id='movie-img-221'></div>
 	<span class='movie-title-main'>荒岛余生</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3612,8 +3468,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='222'>
-	<img src='http://g4.ykimg.com/05160000519327D6670C4A5511013FFA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='222'>
+	<div class='img-container' id='movie-img-222'></div>
 	<span class='movie-title-main'>国王的演讲</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3627,14 +3483,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='223'>
-	<img src='http://g3.ykimg.com/0516000054C7063267379F721C09E3D4' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='223'>
+	<div class='img-container' id='movie-img-223'></div>
 	<span class='movie-title-main'>东京物语</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3648,8 +3500,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='224'>
-	<img src='http://g4.ykimg.com/05160000527C578D6758395B3A0E915A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='224'>
+	<div class='img-container' id='movie-img-224'></div>
 	<span class='movie-title-main'>大卫·戈尔的一生</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3663,8 +3515,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='225'>
-	<img src='http://g2.ykimg.com/05160000525642BB675839222106CBB3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='225'>
+	<div class='img-container' id='movie-img-225'></div>
 	<span class='movie-title-main'>导盲犬小Q</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3678,8 +3530,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='226'>
-	<img src='http://g1.ykimg.com/05160000527338AB6758393AD00C3659' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='226'>
+	<div class='img-container' id='movie-img-226'></div>
 	<span class='movie-title-main'>无敌破坏王</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3693,8 +3545,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='227'>
-	<img src='http://g1.ykimg.com/0516000051B19C806758393B1406289A' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='227'>
+	<div class='img-container' id='movie-img-227'></div>
 	<span class='movie-title-main'>血钻</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3708,8 +3560,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='228'>
-	<img src='http://g2.ykimg.com/051600004FB325720000015BB40EE644' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='228'>
+	<div class='img-container' id='movie-img-228'></div>
 	<span class='movie-title-main'>寿司之神</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3723,14 +3575,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='229'>
-	<img src='http://g3.ykimg.com/051600005226C79B6758396BBF08B735' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='229'>
+	<div class='img-container' id='movie-img-229'></div>
 	<span class='movie-title-main'>我们俩</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3744,8 +3592,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='230'>
-	<img src='http://g4.ykimg.com/05160000538428F167379F04DF085139' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='230'>
+	<div class='img-container' id='movie-img-230'></div>
 	<span class='movie-title-main'>跳出我天地</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3759,8 +3607,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='231'>
-	<img src='http://g1.ykimg.com/0516000052A916CF6758396B550B9BFE' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='231'>
+	<div class='img-container' id='movie-img-231'></div>
 	<span class='movie-title-main'>角斗士</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3774,8 +3622,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='232'>
-	<img src='http://g1.ykimg.com/0516000051F4E6156758392DE8046102' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='232'>
+	<div class='img-container' id='movie-img-232'></div>
 	<span class='movie-title-main'>月球</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3789,8 +3637,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='233'>
-	<img src='http://g1.ykimg.com/05160000530AB089675839227F083EEA' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='233'>
+	<div class='img-container' id='movie-img-233'></div>
 	<span class='movie-title-main'>不一样的天空</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3804,8 +3652,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='234'>
-	<img src='http://g4.ykimg.com/05160000530AAFE067583921F004BCDD' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='234'>
+	<div class='img-container' id='movie-img-234'></div>
 	<span class='movie-title-main'>廊桥遗梦</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3819,14 +3667,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='235'>
-	<img src='http://g3.ykimg.com/05160000527C55A46758392EFF03458E' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='235'>
+	<div class='img-container' id='movie-img-235'></div>
 	<span class='movie-title-main'>假如爱有天意</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3840,8 +3684,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='236'>
-	<img src='http://g1.ykimg.com/05160000552C757167379F6C21059163' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='236'>
+	<div class='img-container' id='movie-img-236'></div>
 	<span class='movie-title-main'>速度与激情5</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3855,8 +3699,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='237'>
-	<img src='http://g4.ykimg.com/0516000051C66BD467583904AB0A56A0' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='237'>
+	<div class='img-container' id='movie-img-237'></div>
 	<span class='movie-title-main'>被解救的姜戈</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3870,8 +3714,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='238'>
-	<img src='http://g1.ykimg.com/0516000052D341646758394A040C46D6' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='238'>
+	<div class='img-container' id='movie-img-238'></div>
 	<span class='movie-title-main'>达拉斯买家俱乐部</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3885,8 +3729,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='239'>
-	<img src='http://g3.ykimg.com/0516000054D33B3167379F1CD404CCD8' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='239'>
+	<div class='img-container' id='movie-img-239'></div>
 	<span class='movie-title-main'>千钧一发</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3900,8 +3744,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='240'>
-	<img src='http://g3.ykimg.com/0516000051EE24D567583913FE09817C' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='240'>
+	<div class='img-container' id='movie-img-240'></div>
 	<span class='movie-title-main'>八月迷情</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3915,14 +3759,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='241'>
-	<img src='http://g3.ykimg.com/05160000543E2ED567379F66740447D8' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='241'>
+	<div class='img-container' id='movie-img-241'></div>
 	<span class='movie-title-main'>未麻的部屋</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3936,8 +3776,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='242'>
-	<img src='http://g2.ykimg.com/0516000051DA868F675839758501A0A9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='242'>
+	<div class='img-container' id='movie-img-242'></div>
 	<span class='movie-title-main'>我在伊朗长大</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3951,8 +3791,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='243'>
-	<img src='http://g1.ykimg.com/0516000052BB8B7667583901DD035301' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='243'>
+	<div class='img-container' id='movie-img-243'></div>
 	<span class='movie-title-main'>我爱你</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3966,8 +3806,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='244'>
-	<img src='http://g1.ykimg.com/0516000052842C7A6758390D9A0E4AA3' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='244'>
+	<div class='img-container' id='movie-img-244'></div>
 	<span class='movie-title-main'>再见列宁</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3981,8 +3821,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='245'>
-	<img src='http://g4.ykimg.com/05160000535481A967379F05AA0EC3F9' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='245'>
+	<div class='img-container' id='movie-img-245'></div>
 	<span class='movie-title-main'>牯岭街少年杀人事件</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -3996,8 +3836,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='246'>
-	<img src='http://g2.ykimg.com/05160000530AB1E26758392288003DA7' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='246'>
+	<div class='img-container' id='movie-img-246'></div>
 	<span class='movie-title-main'>洛城机密</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -4011,14 +3851,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
 <!-- //movies row -->
 <!-- movies row -->
-<div class='col-md-12 movie-row '>
-<div class='row-container'>
-<div class='col-md-2 darken animated zoomIn wow' id='247'>
-	<img src='http://g3.ykimg.com/0516000051E35D45675839435D08C58D' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='247'>
+	<div class='img-container' id='movie-img-247'></div>
 	<span class='movie-title-main'>疯狂的石头</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -4032,8 +3868,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='248'>
-	<img src='http://g1.ykimg.com/0516000053AA5D2A67379F15410A5E58' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='248'>
+	<div class='img-container' id='movie-img-248'></div>
 	<span class='movie-title-main'>莫扎特传</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -4047,8 +3883,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='249'>
-	<img src='http://g3.ykimg.com/0516000052A6AC416758394CFA014DE5' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='249'>
+	<div class='img-container' id='movie-img-249'></div>
 	<span class='movie-title-main'>黑鹰坠落</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -4062,8 +3898,8 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-<div class='col-md-2 darken animated zoomIn wow' id='250'>
-	<img src='http://g4.ykimg.com/05160000527475F7675839181C0DED5F' class='movie-cover-img img-responsive' alt='movie cover'/>
+<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='250'>
+	<div class='img-container' id='movie-img-250'></div>
 	<span class='movie-title-main'>疯狂约会美丽都</span>
 	<span class='rating-bar-block'>
 		<div class='progress rating-bar'>
@@ -4077,10 +3913,10 @@
 	<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>
 	<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>
 </div>
-</div>
-</div>
+
 <!-- //movies row -->
         
+      </div>
       </div>
       <!-- movies section -->
       <div id='loading'></div>

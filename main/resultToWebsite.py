@@ -10,6 +10,7 @@ import io, os
 # result html file
 
 html = """"""
+css = """"""
 
 #other website code
 otherHtml = """
@@ -30,6 +31,7 @@ otherHtml = """
     <!-- CSS -->
     <link href='css/index.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/animate.min.css">
+    <link href='css/movies-img.css' rel='stylesheet'>
     <!-- //CSS -->
     
     <script src="js/wow.min.js"></script>
@@ -52,7 +54,7 @@ otherHtml = """
 
       
       <!-- title bar row -->
-      <div class='col-md-12'>
+      <div class='container-fluid'>
 
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
@@ -91,8 +93,10 @@ otherHtml = """
       </div>
       <!-- //title bar row -->
       <!-- movies section -->
-      <div class='col-md-12 movies-container' id='movies-container'>
+      <div class='container-fluid movies-container' id='movies-container'>
+      <div class='container movies-center-container'>
         
+      </div>
       </div>
       <!-- movies section -->
       <div id='loading'></div>
@@ -143,6 +147,7 @@ otherHtml = """
 def readFiles():
     
     global html
+    global css
     
     #read all crawler result files
     tdir = "../crawlerResult/"
@@ -167,13 +172,16 @@ def readFiles():
     for line in fileBuffer.splitlines():
         
         if lineCounter % (7*6) == 0: #start of one row - 6 items
-            html += "<!-- movies row -->\n<div class='col-md-12 movie-row '>\n<div class='row-container'>\n"
+#             html += "<!-- movies row -->\n<div class='container-fluid movie-row '>\n"
+            html += "<!-- movies row -->\n"
         
         if lineCounter % 7 == 0: #start of one item
-            html += "<div class='col-md-2 darken animated zoomIn wow' id='" + line + "'>\n\t"
+            html += "<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='" + line + "'>\n\t"
         
         if lineCounter % 7 ==1: #img url
-            html += "<img src='" + line + "' class='movie-cover-img img-responsive' alt='movie cover'/>\n\t"
+            curRank = lineCounter/7 + 1
+            html += "<div class='img-container' id='movie-img-" + str(curRank) + "'></div>\n\t" 
+            css += "#movie-img-" + str(curRank) + "{\n\tbackground-image: url('" + line + "');\n}\n"
             
         if lineCounter % 7 ==2: #title
             html += "<span class='movie-title-main'>" + line + "</span>\n\t"
@@ -220,17 +228,19 @@ def readFiles():
             html += '</div>\n' 
 
         if lineCounter % (7*6) == 0: #finished one row - 6 items
-            html += "</div>\n</div>\n<!-- //movies row -->\n" 
+#             html += "</div>\n<!-- //movies row -->\n" 
+            html += "<!-- //movies row -->\n" 
             
         if lineCounter == num_lines: #last line of buffer
             if lineCounter % (7*6) == 0: #finished one row - 6 items
                 pass                            
             else:
-                html += "</div>\n</div>\n<!-- //movies row -->\n" 
+#                 html += "</div>\n\n<!-- //movies row -->\n" 
+                html += "\n<!-- //movies row -->\n" 
                 
 
 def mergeTwohtml(fileHandle):
-    searchLine = "<div class='col-md-12 movies-container' id='movies-container'>\n"
+    searchLine = "<div class='container movies-center-container'>\n"
     
     i = otherHtml.index(searchLine) + len(searchLine) # Make sure searchline is actually in the file
     
@@ -250,9 +260,19 @@ def generateWebsite():
         
     f.close()      
 
+def generateCSS():
+    
+    with io.open('../website/css/movies-img.css','w+',encoding='utf8') as f:
+        
+        f.write(css)
+    
+        
+    f.close() 
+
 if __name__ == '__main__':
     
     generateWebsite()
+    generateCSS()
     
     print "Finished!"
     

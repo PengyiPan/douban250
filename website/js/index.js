@@ -1,3 +1,17 @@
+var seenId = []; // array that stores the movie already seen
+
+$(document).ready(function(){
+
+    checkHeightWidthRatio();
+    detectClicking();
+
+    
+
+});
+
+
+// On start fancy loading image
+
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 2000);
 
@@ -18,12 +32,17 @@ onReady(function () {
     show('loading', false);
 });
 
-
+// // On start fancy loading image
 ////////////////////////
 
-var DELAY = 500, clicks = 0, timer = null;
 
-$(document).ready(function(){
+//Click to add and delete functions
+
+
+
+function detectClicking(){
+
+    var DELAY = 500, clicks = 0, timer = null;
 
     $( ".darken" ).on("click", function(event){
 
@@ -34,7 +53,7 @@ $(document).ready(function(){
             timer = setTimeout(function() {
 
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 7].id
+            var clicked_id = elementList[elementList.length - 5].id
             var movie_to_add = document.getElementById(clicked_id); //perform single-click action
             $("#" + clicked_id).toggleClass("adding");
 
@@ -54,7 +73,7 @@ $(document).ready(function(){
 
             clearTimeout(timer);    //prevent single-click action
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 7].id
+            var clicked_id = elementList[elementList.length - 5].id
             //perform double-click action
             
             if($("#" + clicked_id).hasClass('seen')){ //check if add icon is there
@@ -82,11 +101,8 @@ $(document).ready(function(){
     .on("dblclick", function(event){
         event.preventDefault();  //cancel system double-click event
     });
+}
 
-});
-
-
-var seenId = [];
 function refreshSeenMarker(){
   seenId = arrayToUnique(seenId);
   $('.darken').removeClass('seen');
@@ -115,6 +131,22 @@ function removeAFromArray(arr) {
     }
     return arr;
 }
+
+////Click to add and delete functions
+
+var resize_timer;
+
+function checkHeightWidthRatio(){
+    
+    var div = $('.darken');
+    var width = div.width();
+    
+    div.height(width*1.5);
+
+    resize_timer = window.setTimeout(function(){ checkHeightWidthRatio() },100);
+}
+
+
 
 
 
