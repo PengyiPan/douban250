@@ -144,6 +144,7 @@ function checkRatios(){
     
     div.height(width*1.5);
 
+
     //font ratio
 
     var fontSize = parseInt($(".darken").height());
