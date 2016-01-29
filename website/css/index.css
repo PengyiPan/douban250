@@ -1,6 +1,18 @@
 /*developing*/
+
+body{
+	background-color: #FFF;
+}
+
+
 #movies-container {
     visibility: hidden;
+    max-width: 100%;
+
+/*    border-style: solid;
+	border-width: 3px;
+	border-color: red;*/
+	
 }
 #loading {
 	visibility: visible;
@@ -13,14 +25,16 @@
     height: 1000vh;
     background-color: rgba(255, 255, 255, 1);
     background: url("../image/loading.gif") no-repeat center center fixed;
-/*    background-repeat: no-repeat;
-    background-position: 50vw 50vh;*/
 }
 
+#navbar-container{
+	visibility: hidden;
+}
 
 
 #whole-page-container{
 	padding-top: 5%; /*for nav bar*/
+
 }
 #navbar-logo{
 	width: auto;
@@ -29,6 +43,14 @@
 
 .navbar, .dropdown-menu, .login-btn {
 	background: rgba(255,255,255,0.8);
+}
+
+.movies-center-container{
+/*    border-style: solid;
+	border-width: 3px;
+	border-color: blue;*/
+
+	max-width: 100%;
 }
 
 .img-container{
@@ -70,14 +92,19 @@
 	border-width: 3px;
 	border-color: red;
 	background-color: white;*/
-    
-    padding: 0; 
+    /*padding: 0.5%;*/
+    padding: 0;
     overflow: hidden;
+    border-style: solid;
+	border-width: 0.5%;
+	border-color: white;
+
 
 	-webkit-user-select: none;
 	-moz-user-select: -moz-none;
 	-ms-user-select: none;
-	user-select: none;  
+	user-select: none; 
+
 
 }
 
@@ -91,18 +118,19 @@
 }
 
 .darken:hover .img-container {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+
+  -webkit-transform: scale(1.15);
+     -moz-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+       -o-transform: scale(1.15);
+          transform: scale(1.15);
 }
 .darken:hover .img-container:before {
   -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
 }
 
 
@@ -140,10 +168,12 @@
 	left: -100%;
 	top: 15%;
 	font-weight: 500;
+	padding: 10%;
 }
 .darken .description{
 	left: 100%;
 	top:50%;
+	padding: 10%;
 }
 
 .darken .rating-bar-block{
@@ -213,8 +243,8 @@
 	
 }
 .darken.deleting-add .add-img-container{
-	top:76%;
-	left: 35%;
+	top:74%;
+	left: 33%;
 
     -webkit-animation: minirizedOut 1s linear;
        -moz-animation: minirizedOut 1s linear;
@@ -232,8 +262,8 @@
 
 .darken.seen .add-img-container{
 
-	top:76%;
-	left: 35%;
+	top:74%;
+	left: 33%;
 	-webkit-animation: moveToCorner 0.3s linear;
 	   -moz-animation: moveToCorner 0.3s linear;
 	     -o-animation: moveToCorner 0.3s linear;

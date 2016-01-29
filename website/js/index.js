@@ -2,7 +2,7 @@ var seenId = []; // array that stores the movie already seen
 
 $(document).ready(function(){
 
-    checkRatios();
+    setInterval(checkRatios,100);
     detectClicking();
 
     
@@ -13,7 +13,7 @@ $(document).ready(function(){
 // On start fancy loading image
 
 function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
+    var intervalID = window.setInterval(checkReady, 2000);
 
     function checkReady() {
         if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -29,6 +29,7 @@ function show(id, value) {
 
 onReady(function () {
     show('movies-container', true);
+    show('navbar-container', true);
     show('loading', false);
 });
 
@@ -134,8 +135,6 @@ function removeAFromArray(arr) {
 
 ////Click to add and delete functions
 
-var resize_timer;
-
 function checkRatios(){
 
     //check movie 2:3 raiot
@@ -162,11 +161,6 @@ function checkRatios(){
     $(".progress-bar").css('font-size', ratingBarFontSize);
     $(".progress-bar").css('line-height', ratingBarSize);
 
-
-    resize_timer = window.setTimeout(function(){ checkRatios() },100);
 }
-
-
-
 
 
