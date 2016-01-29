@@ -2,7 +2,7 @@ var seenId = []; // array that stores the movie already seen
 
 $(document).ready(function(){
 
-    checkHeightWidthRatio();
+    checkRatios();
     detectClicking();
 
     
@@ -136,14 +136,34 @@ function removeAFromArray(arr) {
 
 var resize_timer;
 
-function checkHeightWidthRatio(){
+function checkRatios(){
+
+    //check movie 2:3 raiot
     
     var div = $('.darken');
     var width = div.width();
     
     div.height(width*1.5);
 
-    resize_timer = window.setTimeout(function(){ checkHeightWidthRatio() },100);
+    //font ratio
+
+    var fontSize = parseInt($(".darken").height());
+    
+    var titleFontSize = fontSize * 0.08 + "px";
+    var desFontSize = fontSize * 0.045 + "px";
+    var ratingBarSize = fontSize * 0.07 + "px";
+    var ratingBarFontSize = fontSize * 0.04 + "px";
+
+    $(".movie-title-main").css('font-size', titleFontSize);
+    $(".description").css('font-size', desFontSize); 
+    $(".rank-num").css('font-size', desFontSize);  
+    
+    $(".progress").css('height', ratingBarSize);
+    $(".progress-bar").css('font-size', ratingBarFontSize);
+    $(".progress-bar").css('line-height', ratingBarSize);
+
+
+    resize_timer = window.setTimeout(function(){ checkRatios() },100);
 }
 
 

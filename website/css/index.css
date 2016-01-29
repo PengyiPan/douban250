@@ -20,7 +20,7 @@
 
 
 #whole-page-container{
-	padding-top: 70px; /*for nav bar*/
+	padding-top: 5%; /*for nav bar*/
 }
 #navbar-logo{
 	width: auto;
@@ -114,8 +114,6 @@
 	visibility: hidden;
 	width: 100%;	
 	cursor: default;
-	padding-left: 10px;
-	padding-right: 10px;
 
 	text-align: center;
 
@@ -127,7 +125,7 @@
 }
 .darken:hover span{
 
-	left:0px; /*move back to normal position*/
+	left:0%; /*move back to normal position*/
 
     -webkit-transition: all 0.2s ease-in-out;
        -moz-transition: all 0.2s ease-in-out;
@@ -140,21 +138,14 @@
 
 .darken .movie-title-main{
 	left: -100%;
-
 	top: 15%;
-	font-size: 4vmin;
 	font-weight: 500;
 }
 .darken .description{
 	left: 100%;
-	font-size: 1.5vmin;
-
 	top:50%;
 }
-.darken .rank-num{
 
-	top:2%;
-}
 .darken .rating-bar-block{
 
 	top:120%;
@@ -168,14 +159,17 @@
 	border-radius: 0;
 	width: 50%;
 	display: inline-block;
+	padding: 0;
 	
 }
+.darken .progress-bar{
+	text-align: center;
+}
+
 .darken .rank-num{
 	top:2%;
+	padding-left: 5%;
 	text-align: left;
-}
-.darken .badge{
-	background-color: green;
 }
 
 .darken .add-img-container{

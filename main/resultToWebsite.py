@@ -222,7 +222,7 @@ def readFiles():
         lineCounter += 1
         
         if lineCounter % 7 == 0: #end of one item
-            html += "<span class='rank-num'><div class='badge'>" + str(lineCounter/7) + "</div></span>\n\t"
+            html += "<span class='rank-num'><div class='label label-success'>" + str(lineCounter/7) + "</div></span>\n\t"
             html += "<span class='add-img-container'><img src='image/add-png.png' class='add-img'></img></span>\n\t"
             html += "<span class='delete-img-container'><img src='image/delete-png.png' class='delete-img'></img></span>\n"
             html += '</div>\n' 
