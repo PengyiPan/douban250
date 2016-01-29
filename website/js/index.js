@@ -13,7 +13,7 @@ $(document).ready(function(){
 // On start fancy loading image
 
 function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 2000);
+    var intervalID = window.setInterval(checkReady, 500);
 
     function checkReady() {
         if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -28,8 +28,7 @@ function show(id, value) {
 }
 
 onReady(function () {
-    show('movies-container', true);
-    show('navbar-container', true);
+    // show('movies-container', true);
     show('loading', false);
 });
 
@@ -162,6 +161,40 @@ function checkRatios(){
     $(".progress-bar").css('font-size', ratingBarFontSize);
     $(".progress-bar").css('line-height', ratingBarSize);
 
+    
+
 }
+
+
+
+$(window).scroll(function () {
+            var winTop = $(window).scrollTop();
+
+            // if(! ($('#whole-page-container').hasClass('sticky-header'))){
+            //     var newHeight = $(".my-header").outerHeight()-winTop;
+
+
+            //     $(".my-header").css('height',newHeight);
+            // }
+
+
+
+            if (winTop >= $('#whole-page-container').height()*0.01) {
+                $('#whole-page-container').addClass('sticky-header');
+                $(".movies-center-container").css('padding-top','15%');
+            } else {
+                $('#whole-page-container').removeClass('sticky-header');
+                $(".movies-center-container").css('padding-top','30%');
+            }
+
+        });
+
+// $("body").scroll( function() {
+//     var value = $(this).scrollTop();
+//     if ( value > 120 )
+//         $(".navbar").css("background", "transparent");
+    
+        
+// });
 
 

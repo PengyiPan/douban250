@@ -1,7 +1,9 @@
 /*developing*/
 
 body{
+	/*background-color: #AAAAAA;*/
 	background-color: #000;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
 	/*background: url("../image/bg.jpg") no-repeat center center fixed;*/
 
@@ -30,28 +32,24 @@ body{
     background: url("../image/loading.gif") no-repeat center center fixed;
 }
 
-#navbar-container{
-	visibility: hidden;
-}
-
 
 #whole-page-container{
-	padding-top: 5%; /*for nav bar*/
+
+    border-style: solid;
+	border-width: 3px;
+	border-color: yellow;
+
+	/*padding-top: 50%; /*for nav bar*/
 
 }
-#navbar-logo{
-	width: auto;
-	height: 100%;
-}
 
-.navbar, .dropdown-menu, .login-btn {
-	background: rgba(255,255,255,0.8);
-}
 
 .movies-center-container{
-/*    border-style: solid;
+    border-style: solid;
 	border-width: 3px;
-	border-color: blue;*/
+	border-color: blue;
+
+	padding-top: 30%;
 
 	max-width: 100%;
 }
@@ -60,6 +58,8 @@ body{
 
 	width: 100%;
 	height: 100%;
+
+
 
 	background-size: cover;
 
@@ -373,6 +373,74 @@ body{
 	100% {opacity: 0.5;}
 }
 /*//add/delete icon fadeIn animation*/
+
+.my-header {
+  width: 100%;
+  height: 50%;
+  /*background-color: #3498db;*/
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  position: relative;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+} 
+
+.my-header h1 {
+  font-size: 42px;
+  color: #fff;
+  line-height: 230px;
+  text-transform: uppercase;
+  font-weight: 100;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+} 
+
+.my-header nav {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.my-header nav a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: 1;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.my-header nav a:hover {
+  -moz-box-shadow: 0 0 0 1px #fff;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px #fff;
+}                
+
+
+#whole-page-container.sticky-header {
+  padding-top: 100px;
+}
+#whole-page-container.sticky-header .my-header {
+  height: 60px;
+  background-color: transparent;
+}
+#whole-page-container.sticky-header .my-header h1 {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
 
 
 
