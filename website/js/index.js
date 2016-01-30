@@ -161,7 +161,8 @@ function checkRatios(){
     $(".progress-bar").css('font-size', ratingBarFontSize);
     $(".progress-bar").css('line-height', ratingBarSize);
 
-    
+    //
+    $(".movies-center-container").css('padding-top',$(".my-header").height()*1.3);
 
 }
 
@@ -172,10 +173,10 @@ $(window).scroll(function () {
 
             if (winTop >= $('#whole-page-container').height()*0.005) {
                 $('#whole-page-container').addClass('sticky-header');
-                $(".movies-center-container").css('padding-top','27.5%');
+                // $(".movies-center-container").css('padding-top',$(".my-header").height()*1.1);
             } else {
                 $('#whole-page-container').removeClass('sticky-header');
-                $(".movies-center-container").css('padding-top','35%');
+                
             }
 
         });
