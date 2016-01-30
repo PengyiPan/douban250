@@ -53,7 +53,7 @@ function detectClicking(){
             timer = setTimeout(function() {
 
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 6].id
+            var clicked_id = elementList[elementList.length - 4].id
             var movie_to_add = document.getElementById(clicked_id); //perform single-click action
             $("#" + clicked_id).toggleClass("adding");
 
@@ -73,7 +73,7 @@ function detectClicking(){
 
             clearTimeout(timer);    //prevent single-click action
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 6].id
+            var clicked_id = elementList[elementList.length - 4].id
             //perform double-click action
             
             if($("#" + clicked_id).hasClass('seen')){ //check if add icon is there
@@ -170,21 +170,12 @@ function checkRatios(){
 $(window).scroll(function () {
             var winTop = $(window).scrollTop();
 
-            // if(! ($('#whole-page-container').hasClass('sticky-header'))){
-            //     var newHeight = $(".my-header").outerHeight()-winTop;
-
-
-            //     $(".my-header").css('height',newHeight);
-            // }
-
-
-
-            if (winTop >= $('#whole-page-container').height()*0.01) {
+            if (winTop >= $('#whole-page-container').height()*0.005) {
                 $('#whole-page-container').addClass('sticky-header');
-                $(".movies-center-container").css('padding-top','15%');
+                $(".movies-center-container").css('padding-top','27.5%');
             } else {
                 $('#whole-page-container').removeClass('sticky-header');
-                $(".movies-center-container").css('padding-top','30%');
+                $(".movies-center-container").css('padding-top','35%');
             }
 
         });

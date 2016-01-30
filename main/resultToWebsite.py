@@ -158,7 +158,7 @@ def readFiles():
             html += "<!-- movies row -->\n"
         
         if lineCounter % 7 == 0: #start of one item
-            html += "<div class='col-xs-4 col-sm-3 col-md-2 darken animated zoomIn wow' id='" + line + "'>\n\t"
+            html += "<div class='col-xs-4 col-sm-3 col-md-2 darken animated fadeInUp wow' id='" + line + "'>\n\t"
         
         if lineCounter % 7 ==1: #img url
             curRank = lineCounter/7 + 1
