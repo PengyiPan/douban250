@@ -173,10 +173,10 @@ $(window).scroll(function () {
 
             if (winTop >= $('#whole-page-container').height()*0.005) {
                 $('#whole-page-container').addClass('sticky-header');
-                // $(".movies-center-container").css('padding-top',$(".my-header").height()*1.1);
+                $(".movies-center-container").css('padding-top',$(".my-header").height()*1.3);
             } else {
                 $('#whole-page-container').removeClass('sticky-header');
-                
+                $(".movies-center-container").css('padding-top',$(".my-header").height()*1.3);
             }
 
         });
