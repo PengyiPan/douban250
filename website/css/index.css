@@ -11,7 +11,7 @@ body{
 
 
 #movies-container {
-    visibility: hidden;
+    visibility: visible;
     max-width: 100%;
 
 /*    border-style: solid;
@@ -20,7 +20,7 @@ body{
 	
 }
 #loading {
-	visibility: visible;
+	visibility: hidden;
     display: block;
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ body{
 	border-width: 3px;
 	border-color: yellow;*/
 
-	/*padding-top: 50%; /*for nav bar*/
+	/*padding-top: 30%; /*for nav bar*/
 
 }
 
@@ -49,9 +49,15 @@ body{
 	border-width: 3px;
 	border-color: blue;*/
 
-	/*padding-top: 35%;*/
+	padding-top: 55vh;
 
 	max-width: 100%;
+
+	    -webkit-transition: all 0.3s linear;
+           -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+             -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
 }
 
 .img-container{
@@ -360,9 +366,9 @@ body{
 /*//add/delete icon fadeIn animation*/
 
 .my-header {
-	z-index: 100;
+  z-index: 100;
   width: 100%;
-  height: 50%;
+  height: 45vh;
   /*background-color: #3498db;*/
   background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -375,6 +381,10 @@ body{
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+
+/*        border-style: solid;
+	border-width: 3px;
+	border-color: pink;*/
 } 
 
 .my-header h1 {
@@ -391,42 +401,67 @@ body{
 
 .my-header nav {
   position: absolute;
+  left: 0;
   bottom: 0;
-  height: 60px;
-  line-height: 60px;
+  height: 8vh;
   width: 100%;
+  line-height: 8vh;
+
   background-color: rgba(0, 0, 0, 0.5);
+
+/*    border-style: solid;
+	border-width: 3px;
+	border-color: pink;*/
 }
-.my-header nav a {
-  color: #fff;
-  display: inline-block;
-  padding: 10px 15px;
-  line-height: 1;
-  text-decoration: none;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-.my-header nav a:hover {
-  -moz-box-shadow: 0 0 0 1px #fff;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-  box-shadow: 0 0 0 1px #fff;
-}                
 
 
-#whole-page-container.sticky-header {
-  padding-top: 100px;
+.nav-button{
+	font-size: 0.9em;
+	color: #fff;
+	background-color: transparent;
+	border-color: transparent;
+
+	vertical-align: middle;
+
+
+
 }
+
+.nav-button:hover{
+	color: #fff;
+	background-color: transparent;
+	border-color: #fff !important;
+
+}
+.nav-button:active{
+	opacity: 0.6;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;	
+
+}
+
+.nav-button:focus {
+	color: #fff !important;
+	background-color: transparent !important ;
+	border-color: transparent;
+	outline: none  !important;
+
+
+}
+              
 #whole-page-container.sticky-header .my-header {
-  height: 60px;
+  height: 8vh;
   background-color: transparent;
 }
+
+
 #whole-page-container.sticky-header .my-header h1 {
   -moz-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
 }
+
 
 
 

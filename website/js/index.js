@@ -2,7 +2,7 @@ var seenId = []; // array that stores the movie already seen
 
 $(document).ready(function(){
 
-    setInterval(checkRatios,100);
+    checkRatios();
     detectClicking();
 
     
@@ -12,25 +12,25 @@ $(document).ready(function(){
 
 // On start fancy loading image
 
-function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 500);
+// function onReady(callback) {
+//     var intervalID = window.setInterval(checkReady, 500);
 
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
+//     function checkReady() {
+//         if (document.getElementsByTagName('body')[0] !== undefined) {
+//             window.clearInterval(intervalID);
+//             callback.call(this);
+//         }
+//     }
+// }
 
-function show(id, value) {
-    document.getElementById(id).style.visibility = value ? 'visible' : 'hidden';
-}
+// function show(id, value) {
+//     document.getElementById(id).style.visibility = value ? 'visible' : 'hidden';
+// }
 
-onReady(function () {
-    // show('movies-container', true);
-    show('loading', false);
-});
+// onReady(function () {
+//     // show('movies-container', true);
+//     show('loading', false);
+// });
 
 // // On start fancy loading image
 ////////////////////////
@@ -135,6 +135,7 @@ function removeAFromArray(arr) {
 ////Click to add and delete functions
 
 function checkRatios(){
+    console.log("checking ratios");
 
     //check movie 2:3 raiot
     
@@ -161,25 +162,33 @@ function checkRatios(){
     $(".progress-bar").css('font-size', ratingBarFontSize);
     $(".progress-bar").css('line-height', ratingBarSize);
 
+    // $(".nav-button").css('font-size', ratingBarFontSize); 
+
     //
-    $(".movies-center-container").css('padding-top',$(".my-header").height()*1.3);
+    
 
 }
 
+$(window).on('resize', function() {
+  // Code to update element values...
+  checkRatios();
+});
 
 
-$(window).scroll(function () {
-            var winTop = $(window).scrollTop();
 
-            if (winTop >= $('#whole-page-container').height()*0.005) {
-                $('#whole-page-container').addClass('sticky-header');
-                $(".movies-center-container").css('padding-top',$(".my-header").height()*1.3);
-            } else {
-                $('#whole-page-container').removeClass('sticky-header');
-                $(".movies-center-container").css('padding-top',$(".my-header").height()*1.3);
-            }
 
-        });
+$(window).on('scroll', function() {
+    var winTop = $(window).scrollTop();
+
+    if (winTop >= $('#whole-page-container').height()*0.005) {
+        $('#whole-page-container').addClass('sticky-header');
+        // $(".movies-center-container").css('padding-top',"25vh");
+    } else {
+        $('#whole-page-container').removeClass('sticky-header');
+
+    }
+
+});
 
 // $("body").scroll( function() {
 //     var value = $(this).scrollTop();
