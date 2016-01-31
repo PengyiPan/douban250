@@ -14,8 +14,6 @@ css = """"""
 
 #other website code
 otherHtml = """
-
-
 <!DOCTYPE html>
 <html lang='en'>
   <head>
@@ -36,12 +34,6 @@ otherHtml = """
     <link href='css/normalize.css' rel='stylesheet'>
     <!-- //CSS -->
     
-    <script src="js/wow.min.js"></script>
-    <script>
-        setTimeout(function() {
-          new WOW().init();
-        },2000);      
-    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,13 +47,16 @@ otherHtml = """
       
     <!-- whole page container -->
     <div class='container-fluid' id='whole-page-container'>
-        <div class='my-header'>
-            <h1>Sticky Header Pow!</h1>
+
+        <div class='my-header container-fluid'>
+            <h1>看完豆瓣250没</h1>
             <nav>
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Gallery</a>
-              <a href="">Contact</a>
+             
+              <button type="button" class="btn btn-default nav-button">这玩意咋用</button>
+              <button type="button" class="btn btn-default nav-button">看电影干嘛</button>
+              <button type="button" class="btn btn-default nav-button">谁那么无聊</button>
+              <button type="button" class="btn btn-default nav-button">登录试试看</button>
+              
             </nav>
           </div>
 
@@ -75,8 +70,11 @@ otherHtml = """
       <div class='container movies-center-container'>
 
         
+      </div> 
+      <!-- //movies-center-container -->
       </div>
-      </div>
+      <!-- movies-container -->
+      
       <!-- movies section -->
       <div id='loading'></div>
         
@@ -120,6 +118,7 @@ otherHtml = """
     
   </body>
 </html>
+
 """
 
 

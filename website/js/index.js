@@ -53,7 +53,7 @@ function detectClicking(){
             timer = setTimeout(function() {
 
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 4].id
+            var clicked_id = elementList[elementList.length - 6].id
             var movie_to_add = document.getElementById(clicked_id); //perform single-click action
             $("#" + clicked_id).toggleClass("adding");
 
@@ -73,7 +73,7 @@ function detectClicking(){
 
             clearTimeout(timer);    //prevent single-click action
             elementList = document.elementsFromPoint(event.clientX, event.clientY)
-            var clicked_id = elementList[elementList.length - 4].id
+            var clicked_id = elementList[elementList.length - 6].id
             //perform double-click action
             
             if($("#" + clicked_id).hasClass('seen')){ //check if add icon is there
@@ -135,7 +135,6 @@ function removeAFromArray(arr) {
 ////Click to add and delete functions
 
 function checkRatios(){
-    console.log("checking ratios");
 
     //check movie 2:3 raiot
     
