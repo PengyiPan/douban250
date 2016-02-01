@@ -409,10 +409,10 @@ body{
   line-height: 6vh;
   text-transform: uppercase;
   font-weight: 100;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 /*
       border-style: solid;
 	border-width: 3px;
@@ -481,10 +481,10 @@ body{
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 	opacity: 0;
-     -moz-transform: translate3d(0,-5vh,0);
-      -ms-transform: translate3d(0,-5vh,0);
-  -webkit-transform: translate3d(0,-5vh,0);
-          transform: translate3d(0,-5vh,0);	
+     -moz-transform: translate3d(0,-15vh,0);
+      -ms-transform: translate3d(0,-15vh,0);
+  -webkit-transform: translate3d(0,-15vh,0);
+          transform: translate3d(0,-15vh,0);	
 }
 /*logo*/
 .my-header #logo-img-container{
@@ -507,10 +507,10 @@ body{
 	width: 8vmax;
 	height: 8vmax;
 
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;	
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;	
 }
 #whole-page-container.sticky-header .my-header #logo-img{
      -moz-transform: scale(0.5);
