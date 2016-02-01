@@ -103,7 +103,14 @@ otherHtml = """
           </div>
         </div>      
       
+        <div id='footer-container'>
+            <div id='footer'>
+                &copy; 2016 Pengyi Pan
+                <a target='_black' href='https://github.com/PengyiPan'><img class='footer-icon' alt='github-img' src="image/social-1_logo-github.svg"></a>
+                <a target='_black' href='https://www.linkedin.com/in/pengyipan'><img class='footer-icon' alt='linkedin-img' src="image/social-1_logo-linkedin.svg"></a>
+            </div>
 
+        </div> 
 
     </div>
     <!-- //whole page container -->
