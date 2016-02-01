@@ -22,7 +22,7 @@ otherHtml = """
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>看完豆瓣250没</title>
-    <link rel="shortcut icon" href="image/siteIcon.ico">
+    <link rel="shortcut icon" href="image/logo.png">
 
     <!-- Bootstrap -->
     <link href='css/bootstrap.min.css' rel='stylesheet'>
