@@ -3,7 +3,8 @@
 body{
 	/*background-color: #AAAAAA;*/
 	background-color: #000;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Microsoft YaHei", 微软雅黑, STXihei, 华文细黑, SimHei, 黑体, serif-serif;
 
 	/*background: url("../image/bg.jpg") no-repeat center center fixed;*/
 
@@ -407,7 +408,7 @@ body{
   font-size: 2.5vmax;
   color: #fff;
   line-height: 6vh;
-  text-transform: uppercase;
+
   font-weight: 100;
   -moz-transition: all 0.8s ease;
   -o-transition: all 0.8s ease;
