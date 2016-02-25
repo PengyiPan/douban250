@@ -6,17 +6,17 @@
 Website to crawl
 -----------------
 
-![ScreenShot](Screen_Shot_1.png?raw=true "douban.com")
+![ScreenShot](Screen_Shot_1-min.png?raw=true "douban.com")
 
 Result
 -----------------
 
-![ScreenShot](Screen_Shot_2.png?raw=true "generated website 1")
+![ScreenShot](Screen_Shot_2-min.png?raw=true "generated website 1")
 
 Hover for detail & selection functionality
 -----------------
 
-![ScreenShot](Screen_Shot_3.png?raw=true "generated website 2")
+![ScreenShot](Screen_Shot_3-min.png?raw=true "generated website 2")
 
 
 
