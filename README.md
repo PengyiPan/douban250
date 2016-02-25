@@ -1,2 +1,4 @@
 # douban250
-豆瓣电影top250 爬虫＋网站
+Crawler written in Python to display top 250 movies from douban.com
+
+
