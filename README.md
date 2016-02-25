@@ -13,7 +13,7 @@ Result
 
 ![ScreenShot](Screen_Shot_2-min.png?raw=true "generated website 1")
 
-Hover for detail & selection functionality
+Movie details on hover & selection functionality
 -----------------
 
 ![ScreenShot](Screen_Shot_3-min.png?raw=true "generated website 2")
